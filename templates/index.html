@@ -3,17 +3,13 @@
  <title>Bebras Tasks</title>
 </head>
 <body>
- <h1>Hello</h1>
- <form action="/write" method="POST">
-  <input type="text" name="userinput" id="userinput">
-  <input type="submit" value="Submit">
- </form>
- <a href="./deleteall">Delete all</a>
-<img src="prova.JPG" alt="ciao" height="1000" width="1000">
+ <h1>Quesiti Bebras</h1>
+<p>Questi sono i quesiti Bebras inseriti nel db: </p>
 
-  {% for userinput in userinputs %}
- <p>'{{userinput.message}}' has database id {{userinput._id}}</p>
- {% endfor %}
+{% for quesiti in quesiti %}
+<p>'{{quesiti.titolo}}' ha il codice {{quesiti.id}}</p>
+{% endfor %}
+
 </body>
 
 </html>

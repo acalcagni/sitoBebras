@@ -18,19 +18,9 @@ handle = connect()
 @app.route("/index" ,methods=['GET'])
 @app.route("/", methods=['GET'])
 def index():
-    userinputs = [x for x in handle.mycollection.find()]
-    return render_template('index.html', userinputs=userinputs)
+    quesiti = [x for x in handle.tasks.find()]
+    return render_template('index.html', quesiti=quesiti)
 
-@app.route("/write", methods=['POST'])
-def write():
-    userinput = request.form.get("userinput")
-    oid = handle.mycollection.insert({"message":userinput})
-    return redirect ("/")
-
-@app.route("/deleteall", methods=['GET'])
-def deleteall():
-    handle.mycollection.remove()
-    return redirect ("/")
 
 # Remove the "debug=True" for production
 if __name__ == '__main__':
