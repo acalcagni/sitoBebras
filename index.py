@@ -1,4 +1,6 @@
 from flask import Flask, render_template, request, redirect
+# render_template -> indica il file html da visualizzare
+# redirect -> la funzione di questo foglio python da eseguire
 import os
 from pymongo import MongoClient
 
@@ -21,6 +23,9 @@ def index():
     quesiti = [x for x in handle.tasks.find()]
     return render_template('index.html', quesiti=quesiti)
 
+@app.route("/find", methods=['GET'])
+def find():
+    return render_template('cercauno.html')
 
 # Remove the "debug=True" for production
 if __name__ == '__main__':
