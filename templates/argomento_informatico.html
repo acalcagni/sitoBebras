@@ -1,0 +1,15 @@
+{% extends "task.html" %}
+<div id="argomento_informatico">
+{% block task %}  
+
+{% autoescape false %}
+{{task.anchequestainformatica}}
+{% endautoescape %}
+<h3>Parole chiave</h3>
+<ul>
+    {% for n in task.parole_chiave %}
+    <li>{{n}}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

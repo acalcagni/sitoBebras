@@ -1,0 +1,50 @@
+{% extends "template.html" %}
+{% block body %}     
+    <div class="row">
+    <div class="col-12">
+
+    <table id="myTable" class="table table-striped table-bordered" cellspacing="0" width="100%">
+        <thead id="one">
+            <tr>
+                <th>Titolo
+                </th>
+                <th>Anno
+                	
+                </th>
+                <th>Categoria
+					
+                </th>
+            </tr>
+            </thead>
+           <thead id="two">
+            <tr>
+                <th>
+                <input type="text" class="form-control" id="titoloSearch" placeholder="Cerca titolo" />
+                </th>
+                <th>
+                	<select id="annoSearch" name="anno" class="form-control" placeholder="Anno">
+						</select>
+                </th>
+                <th>
+					<select id="categoriaSearch" name="categoria" class="form-control" placeholder="Categoria">
+                    </select> 
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for quesito in quesiti %}
+            <tr>
+                <td><a href="/dettaglioquesito?id_quesito={{quesito.id}}">{{quesito.titolo}}</a></td>
+                <td>{{quesito.anno}}</td>
+                <td>
+                	{% for range in quesito.categoria %}
+						{{range}}
+					{% endfor %}
+				</td>
+            </tr>
+       	{% endfor %}
+        </tbody>
+    </table>       
+    </div>
+  </form>
+{% endblock %}
