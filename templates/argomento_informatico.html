@@ -1,15 +1,23 @@
+<!-- ARGOMENTO_INFORMATICO.HTML -->
 {% extends "task.html" %}
-<div id="argomento_informatico">
-{% block task %}  
+{% block task %}
 
-{% autoescape false %}
-{{task.anchequestainformatica}}
-{% endautoescape %}
-<h3>Parole chiave</h3>
-<ul>
-    {% for n in task.parole_chiave %}
-    <li>{{n}}</li>
-    {% endfor %}
-  </ul>
+<div id="argomento_informatico" style="border-style: groove; padding-top: 2%; padding-right: 4%; padding-left: 2%; padding-bottom: 2%">
+	<p>
+	{% autoescape false %}
+	{{task.anchequestainformatica}}
+	{% endautoescape %}
+	</p>
+<div style="padding-top: 3%">
+	<h4 style="text-align: left; color: rgb(2,116,215); text-decoration: underline">Parole chiave</h4>
+	<ul>
+    	{% for n in task.parole_chiave %}
+	    <li>{{n}}</li>
+    	{% endfor %}
+	</ul>
 </div>
+</div> <!-- end argomento_informatico -->	
+
+<!-- END ARGOMENTOINFORMATICO.HTML -->
 {% endblock %}
+

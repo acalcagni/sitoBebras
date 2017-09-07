@@ -2,6 +2,7 @@
 $(document).ready(function(){
 
 
+
  $("#myModal").draggable({
       handle: ".modal-header"
   });
@@ -52,7 +53,7 @@ var table = $('#myTable').DataTable({
   "language":{
       "lengthMenu":"Visualizza _MENU_ elementi per pagina",
       "search":         "Search:",
-      "zeroRecords":    "No matching records found",
+      "zeroRecords":    "Nessun quesito Bebras trovato",
       "paginate": {
           "first":      "First",
           "last":       "Last",
@@ -120,4 +121,5 @@ $('#titoloSearch').on( 'keyup', function () {
 } );
 
 
+ 
 });

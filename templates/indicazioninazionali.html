@@ -1,8 +1,338 @@
-Elenco obiettivi e traguardi
+<!-- INDICAZIONINAZIONALI.HTML -->
+
+{% extends "template.html" %}
+{% block body %}
 
 
+<div name="div esterno" style="padding-left: 5%; padding-right: 5%; padding-bottom: 5%">
+	<h3 style="text-align: left; color: rgb(2,116,215); font-weight: bold; padding-bottom: 1%; padding-top: 2%">Indicazioni nazionali per il curricolo della scuola dell’infanzia e del primo ciclo d’istruzione</h3>
+	<div class="accordion" id="accordionPrincipale">
+<!-- MATEMATICA -->
+  		<div class="accordion-group"> <!-- inizio accordion MATEMATICA -->
+    		<div class="accordion-heading">
+    			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionPrincipale" href="#collapseMatematica">
+      				<h2>Matematica</h2>
+      			</a>
+    		</div> <!-- end accordion heading matematica -->
+    		<div id="collapseMatematica" class="accordion-body collapse in">
+    			<div class="accordion-inner">        
+        				<!-- Here we insert another nested accordion -->
+        			<div class="accordion" id="accordionMatematica" style="padding-left: 2%">
+<!-- SCUOLA PRIMARIA -->
+        				<div class="accordion-group"> <!-- SCUOLA PRIMARIA in MATEMATICA -->
+            				<div class="accordion-heading">
+              					<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionMatematica" href="#collapseInnerElementari">
+                					<h4>Scuola primaria</h4>
+              					</a>
+            				</div>
+            				<div id="collapseInnerElementari" class="accordion-body collapse in">
+              					<div class="accordion-inner">                
+        								<!-- Here we insert another nested accordion -->
+						        	<div class="accordion" id="accordionElementari" style="padding-left: 2%">
+<!-- TRAGUARDI -->
+          								<div class="accordion-group"> <!-- TRAGUARDI in PRIMARIA in MATEMATICA -->
+            								<div class="accordion-heading">
+              									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionElementari" href="#collapseInnerTraguardi">
+                									<h5>Traguardi per lo sviluppo delle competenze al termine della scuola primaria</h5>
+              									</a>
+            								</div>
+<!-- elenco -->
+            								<div id="collapseInnerTraguardi" class="accordion-body collapse in"> <!-- ELENCO traguardi in PRIMARIA in MATEMATICA -->
+              									<div class="accordion-inner" style="padding-left: 2%">
+                									{% for n in matematica_traguardi_elementari %}
+														<ul>
+															<li><p>{{n.traguardo}}<br><a href="/elencoquesiti?type=traguardo&id={{n.id_indicazioni}}">Vedi i quesiti Bebras attinenti</a></p></li>
+														</ul>
+													{% endfor %}<!-- end for matematica_traguardi_elementari -->
+              									</div>
+            								</div>
+          								</div> <!-- END TRAGUARDI in PRIMARIA in MATEMATICA -->
+<!-- OBIETTIVI FINE TERZA -->
+          								<div class="accordion-group"> <!-- OBIETTIVI TERZA in PRIMARIA in MATEMATICA -->
+            								<div class="accordion-heading">
+              									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionElementari" href="#collapseInnerObiettiviTerza">
+                									<h5>Obiettivi di apprendimento al termine della classe terza della scuola primaria</h5>
+              									</a>
+            								</div>
+<!-- elenco -->
+            								<div id="collapseInnerObiettiviTerza" class="accordion-body collapse"> <!-- ELENCO obiettivi in PRIMARIA FINE TERZA in MATEMATICA -->
+              									<div class="accordion-inner" style="padding-left: 2%">
+                									<h6 style="font-style: italic;">Numeri</h6>
+													{% for n in mat_ob_elem_terza_numeri %}
+														<ul>
+															<li>
+																<p>{{n.obiettivo}}<br><a href="/elencoquesiti?type=obiettivo&id={{n.id_indicazioni}}">Vedi i quesiti Bebras attinenti</a></p>
+															</li>
+														</ul>
+													{% endfor %}<!-- end for mat_ob_elem_terza_numeri -->
+				
+													<h6 style="font-style: italic;">Spazio e figure</h6>
+													{% for n in mat_ob_elem_terza_spazio %}
+														<ul>
+															<li>
+																<p>{{n.obiettivo}}<br><a href="/elencoquesiti?type=obiettivo&id={{n.id_indicazioni}}">Vedi i quesiti Bebras attinenti</a></p>
+															</li>
+														</ul>
+													{% endfor %}<!-- end for mat_ob_elem_terza_spazio -->
 
+													<h6 style="font-style: italic;">Relazioni, dati e previsioni</h6>
+													{% for n in mat_ob_elem_terza_relazioni %}
+														<ul>
+															<li>
+																<p>{{n.obiettivo}}<br><a href="/elencoquesiti?type=obiettivo&id={{n.id_indicazioni}}">Vedi i quesiti Bebras attinenti</a></p>
+															</li>
+														</ul>
+													{% endfor %}<!-- end for mat_ob_elem_terza_relazioni -->
+               									</div>
+            								</div> <!-- END ELENCO obiettivi in PRIMARIA FINE TERZA in MATEMATICA -->
+          								</div> <!-- END OBIETTIVI TERZA in PRIMARIA in MATEMATICA -->
+<!-- OBIETTIVI FINE QUINTA -->
+          								<div class="accordion-group"><!-- OBIETTIVI QUINTA in PRIMARIA in MATEMATICA -->
+            								<div class="accordion-heading">
+              									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionElementari" href="#collapseInnerobiettiviQuinta">
+                									<h5>Obiettivi di apprendimento al termine della classe quinta della scuola primaria</h5>
+              									</a>
+            								</div>
+<!-- elenco -->
+            								<div id="collapseInnerobiettiviQuinta" class="accordion-body collapse in">
+              									<div class="accordion-inner" style="padding-left: 2%">
+                									<h6 style="font-style: italic;">Spazio e figure</h6>
+													{% for n in mat_ob_elem_quinta_spazio %}
+														<ul>
+															<li>
+																<p>{{n.obiettivo}}<br><a href="/elencoquesiti?type=obiettivo&id={{n.id_indicazioni}}">Vedi i quesiti Bebras attinenti</a></p>
+															</li>
+														</ul>
+													{% endfor %}<!-- end for mat_ob_elem_quinta_spazio -->
 
-{% for n in traguardi %}
-	{{n.traguardo}}
-{% endfor %}
+													<h6 style="font-style: italic;">Relazioni, dati e previsioni</h6>
+													{% for n in mat_ob_elem_quinta_relazioni %}
+														<ul>
+															<li>
+																<p>{{n.obiettivo}}<br><a href="/elencoquesiti?type=obiettivo&id={{n.id_indicazioni}}">Vedi i quesiti Bebras attinenti</a></p>
+															</li>
+														</ul>
+													{% endfor %}<!-- end for mat_ob_elem_quinta_relazioni -->
+              									</div>
+            								</div> <!-- END elenco -->
+         								</div><!-- END OBIETTIVI QUINTA in PRIMARIA in MATEMATICA -->
+        							</div>
+        								<!-- Inner accordion ends here -->
+              					</div> <!-- END TRAGUARDI in PRIMARIA in MATEMATICA -->
+            				</div> <!-- END PRIMARIA in MATEMATICA -->
+          				</div>
+          				<div class="accordion-group">
+            				<div class="accordion-heading">
+            	  				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionMatematica" href="#collapseInnerMedie">
+                					<h4>Scuola secondaria di primo grado</h4>
+              					</a>
+            				</div>
+            				<div id="collapseInnerMedie" class="accordion-body collapse">
+              					<div class="accordion-inner" style="padding-left: 2%">                
+                	        			<!-- Here we insert another nested accordion -->
+        							<div class="accordion" id="accordionMedie" style="padding-left: 2%">
+          								<div class="accordion-group">
+           									<div class="accordion-heading">
+              									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionMedie" href="#collapseInnerTraguardiMateMedie">
+                									<h5>Traguardi per lo sviluppo delle competenze al termine della scuola secondaria di primo grado</h5>
+              									</a>
+            								</div>
+            								<div id="collapseInnerTraguardiMateMedie" class="accordion-body collapse in">
+              									<div class="accordion-inner" style="padding-left: 2%">
+                									{% for n in matematica_traguardi_medie %}
+														<ul>
+															<li><p>{{n.traguardo}}<br><a href="/elencoquesiti?type=traguardo&id={{n.id_indicazioni}}">Vedi i quesiti Bebras attinenti</a></p></li>
+														</ul>
+													{% endfor %}<!-- end for matematica_traguardi_medie -->
+              									</div>
+            								</div>
+          								</div>
+          								<div class="accordion-group">
+            								<div class="accordion-heading">
+              									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionMedie" href="#collapseInnerObiettiviMateMedie">
+                									<h5>Obiettivi di apprendimento al termine della classe terza della scuola secondaria di primo grado</h5>
+           										</a>
+            								</div>
+            								<div id="collapseInnerObiettiviMateMedie" class="accordion-body collapse">
+              									<div class="accordion-inner" style="padding-left: 2%">
+                									<h6 style="font-style: italic;">Numeri</h6>
+													{% for n in mat_ob_medie_numeri %}
+														<ul>
+															<li>
+																<p>{{n.obiettivo}}<br><a href="/elencoquesiti?type=obiettivo&id={{n.id_indicazioni}}">Vedi i quesiti Bebras attinenti</a></p>
+															</li>
+														</ul>
+													{% endfor %}<!-- end for mat_ob_medie_numeri -->
+
+													<h6 style="font-style: italic;">Dati e previsioni</h6>
+													{% for n in mat_ob_medie_dati %}
+														<ul>
+															<li>
+																<p>{{n.obiettivo}}<br><a href="/elencoquesiti?type=obiettivo&id={{n.id_indicazioni}}">Vedi i quesiti Bebras attinenti</a></p>
+															</li>
+														</ul>
+													{% endfor %}<!-- end for mat_ob_medie_dati -->
+              									</div>
+            								</div>
+          								</div>
+        							</div>
+        								<!-- Inner accordion ends here -->
+              					</div>
+            				</div>
+          				</div>
+        			</div>
+        			<!-- Inner accordion ends here -->
+      			</div>
+    		</div>
+  		</div>
+<!-- SCIENZE -->
+  		<div class="accordion-group"> <!-- inizio accordion SCIENZE -->
+    		<div class="accordion-heading">
+      			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionPrincipale" href="#collapseScienze">
+       				 <h2>Scienze</h2>
+      			</a>
+    		</div>
+    		<div id="collapseScienze" class="accordion-body collapse">
+      			<div class="accordion-inner" style="padding-left: 2%">
+      				<!-- Here we insert another nested accordion -->
+        			<div class="accordion" id="accordionScienze" style="padding-left: 2%">
+          				<div class="accordion-group">
+            				<div class="accordion-heading">
+    	          				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionScienze" href="#collapseInnerScienzeElementari">
+        	        				<h4>Scuola primaria</h4>
+            	  				</a>
+            				</div>
+            				<div id="collapseInnerScienzeElementari" class="accordion-body collapse in">
+             					<div class="accordion-inner" style="padding-left: 2%">
+                						<!-- Here we insert another nested accordion -->
+									<div class="accordion" id="accordionTecnologiaElementari" style="padding-left: 2%">
+          								<div class="accordion-group">
+            								<div class="accordion-heading">
+              									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionTecnologiaElementari" href="#collapseInnerTraguardiScienzeMedie">
+                									<h5>Traguardi per lo sviluppo delle competenze al termine della scuola primaria</h5>
+              									</a>
+            								</div>
+            								<div id="collapseInnerTraguardiScienzeMedie" class="accordion-body collapse in">
+              									<div class="accordion-inner" style="padding-left: 2%">
+                									{% for n in scienze_traguardi_elementari %}
+														<ul>
+															<li><p>{{n.traguardo}}<br><a href="/elencoquesiti?type=traguardo&id={{n.id_indicazioni}}">Vedi i quesiti Bebras attinenti</a></p></li>
+														</ul>
+													{% endfor %}<!-- end for tecnologia_traguardi_medie -->
+              									</div>
+            								</div>
+          								</div>
+        							</div>
+        							<!-- Inner accordion ends here -->
+						    	</div>
+    						</div>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+<!-- TECNOLOGIA -->
+    	<div class="accordion-group"> <!-- inizio accordion TECNOLOGIA -->
+  			<div class="accordion-heading">
+      			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionPrincipale" href="#collapseTecnologia">
+        			<h2>Tecnologia</h2>
+      			</a>
+    		</div>
+    		<div id="collapseTecnologia" class="accordion-body collapse">
+      			<div class="accordion-inner" style="padding-left: 2%">
+				     <!-- Here we insert another nested accordion -->
+					<div class="accordion" id="accordionTecnologia" style="padding-left: 2%">
+          				<div class="accordion-group">
+            				<div class="accordion-heading">
+              					<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionTecnologia" href="#collapseInnerTecnologiaElementari">
+                					<h4>Scuola primaria</h4>
+              					</a>
+            				</div>
+            				<div id="collapseInnerTecnologiaElementari" class="accordion-body collapse in">
+             	 				<div class="accordion-inner" style="padding-left: 2%">
+								        <!-- Here we insert another nested accordion -->
+			        				<div class="accordion" id="accordionTecnologiaElementariObiettivi" style="padding-left: 2%">
+          								<div class="accordion-group">
+            								<div class="accordion-heading">
+              									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionTecnologiaElementariObiettivi" href="#collapseInnerObiettiviTecnologieElementari">
+                									<h5>Obiettivi di apprendimento al termine della classe quinta della scuola primaria</h5>
+              									</a>
+            								</div>
+            								<div id="collapseInnerObiettiviTecnologieElementari" class="accordion-body collapse in">
+              									<div class="accordion-inner" style="padding-left: 2%">
+                									<h6 style="font-style: italic;">Vedere e osservare</h6>
+													{% for n in tecnologia_ob_elem_vedere %}
+														<ul>
+															<li>
+																<p>{{n.obiettivo}}<br><a href="/elencoquesiti?type=obiettivo&id={{n.id_indicazioni}}">Vedi i quesiti Bebras attinenti</a></p>
+															</li>
+														</ul>
+													{% endfor %}<!-- end for tecnologia_ob_elem_vedere -->
+              									</div>
+            								</div>
+		            					</div>
+		            				</div>
+		            			</div>
+		            		</div>
+		            		<div class="accordion-heading">
+              					<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionTecnologia" href="#collapseInnerTecnologiaMedie">
+                					<h4>Scuola secondaria di primo grado</h4>
+            					</a>
+            				</div>
+            				<div id="collapseInnerTecnologiaMedie" class="accordion-body collapse in">
+              					<div class="accordion-inner" style="padding-left: 2%">
+       													<!-- Here we insert another nested accordion -->
+        							<div class="accordion" id="accordionTecnologiaMedie" style="padding-left: 2%">
+          								<div class="accordion-group">
+            								<div class="accordion-heading">
+              									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionTecnologiaMedie" href="#collapseInnerTraguardiTecnologiaMedie">
+                									<h5>Traguardi per lo sviluppo delle competenze al termine della scuola secondaria di primo grado</h5>
+              									</a>
+            								</div>
+            								<div id="collapseInnerTraguardiTecnologiaMedie" class="accordion-body collapse in">
+              									<div class="accordion-inner" style="padding-left: 2%">
+                									{% for n in tecnologia_traguardi_med %}
+														<ul>
+															<li><p>{{n.traguardo}}<br><a href="/elencoquesiti?type=traguardo&id={{n.id_indicazioni}}">Vedi i quesiti Bebras attinenti</a></p></li>
+														</ul>
+													{% endfor %}<!-- end for tecnologia_traguardi_med -->
+              									</div>
+            								</div>
+          								</div>
+          								<div class="accordion-group">
+            								<div class="accordion-heading">
+              									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionTecnologiaMedie" href="#collapseInnerObiettiviTecnologiaMedie">
+                									<h5>Obiettivi di apprendimento al termine della classe terza della scuola secondaria di primo grado</h5>
+              									</a>
+            								</div>
+            								<div id="collapseInnerObiettiviTecnologiaMedie" class="accordion-body collapse">
+              									<div class="accordion-inner" style="padding-left: 2%">
+                									<h6 style="font-style: italic;">Prevedere, immaginare e progettare</h6>
+													{% for n in tecnologia_ob_medie_prevedere %}
+														<ul>
+															<li><p>{{n.obiettivo}}<br><a href="/elencoquesiti?type=obiettivo&id={{n.id_indicazioni}}">Vedi i quesiti Bebras attinenti</a></p></li>
+														</ul>
+													{% endfor %}<!-- end for tecnologia_ob_medie_prevedere -->
+													<h6 style="font-style: italic;">Intervenire, trasformare e produrre</h6>
+													{% for n in tecnologia_ob_medie_intervenire %}
+														<ul>
+															<li><p>{{n.obiettivo}}<br><a href="/elencoquesiti?type=obiettivo&id={{n.id_indicazioni}}">Vedi i quesiti Bebras attinenti</a></p></li>
+														</ul>
+													{% endfor %}<!-- end for tecnologia_ob_medie_intervenire -->
+              									</div>
+            								</div>
+          								</div>
+        							</div>          
+        															<!-- Inner accordion ends here -->
+              					</div>
+            				</div>
+          				</div>
+      				</div>          
+											        <!-- Inner accordion ends here -->
+      			</div>
+    		</div>
+  		</div>
+	</div> <!-- end accordion principale -->
+</div> <!-- end div esterno -->
+{% endblock %}
+<!-- END INDICAZIONINAZIONALI.HTML -->

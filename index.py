@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, redirect, make_response
 from pprint import pprint
-import pdfkit
 
 # render_template -> indica il file html da visualizzare
 # redirect -> la funzione di questo foglio python da eseguire
@@ -19,23 +18,24 @@ def connect():
     return handle
 
 app = Flask(__name__)
-handle = connect()
 
+handle = connect()
 # Bind our index page to both www.domain.com/ and www.domain.com/index
 @app.route("/index", methods=['GET'])
 @app.route("/", methods=['GET'])
 def index():
     return render_template('index.html')
 
-@app.route("/indicazioninazionali", methods=['GET'])
-def indicazioninazionali():
-    traguardi = handle.indicazioni.find({'traguardo':{'$exists': True}})
-    return render_template('indicazioninazionali.html', traguardi=traguardi)
-
 @app.route("/elencoquesiti", methods=['GET'])
 def elencoquesiti():
-    result = request.args
-    quesiti = handle.tasks.find().sort([("titolo",1)])
+    #result = request.args
+    type = request.args.get("type")
+    id = request.args.get("id")
+    
+    if type and id:
+        quesiti = handle.tasks.find({'indicazioni_nazionali':{'$in':[id]}})
+    else:
+        quesiti = handle.tasks.find()
     return render_template('elencoquesiti.html', quesiti=quesiti)
 
 @app.route("/dettaglioquesito")
@@ -50,19 +50,49 @@ def soluzione():
 def argomento_informatico():
      return render_template('argomento_informatico.html', task=findTask(), argomento=True)
 
-@app.route("/generaPdf", methods=['POST'])
+@app.route("/traguardieobiettivi")
+def traguardieobiettivi():
+    indicazioninaz = handle.indicazioninazionali.find()
+    return render_template('traguardieobiettivi.html', task=findTask(), indicazioni=True, indicazioninaz=indicazioninaz)
+
+@app.route("/generaPdf", methods=['GET', 'POST'])
 def generaPdf():
+    getvalue = request.args
+    titolo = getvalue["titolo"]
     data = request.form
     task = handle.tasks.find_one({'id':data.get("id_quesito")})
-    rendered = render_template('pdftemplate.html', task = task)
-    pdf = pdfkit.from_string(rendered, False)
+    rendered = render_template('pdftemplate.html', task = task, data=data, titolo=titolo)
+    final=modify_img_path(rendered)
+    file_class = Pdf()
+    pdf = file_class.render_pdf(final)
+    headers = {
+        'content-type': 'application.pdf',
+        'content-disposition': 'attachment; filename="%s_QuesitoBebras.pdf"' %(titolo)}
+        #per fare il download automatico del PDF scrivere attachment
+    return pdf, 200, headers
 
-    response= make_response(pdf)
-    response.headers['Content-Type'] = 'application/pdf'
-    response.headers['Content-Disposition'] = 'inline; filename=output.pdf'
+@app.route("/indicazioninazionali", methods=['GET'])
+def indicazioninazionali():
+    traguardi = handle.indicazioninazionali.find({'traguardo':{'$exists': True}})
+    matematica_traguardi_elementari = handle.indicazioninazionali.find({'traguardo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola primaria" })
+    mat_ob_elem_terza_numeri = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola primaria", 'classi_scolastiche' : "Fine classe terza", 'argomento_obiettivo' : "Numeri"})
+    mat_ob_elem_terza_spazio = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola primaria", 'classi_scolastiche' : "Fine classe terza", 'argomento_obiettivo' : "Spazio e figure"})
+    mat_ob_elem_terza_relazioni = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola primaria", 'classi_scolastiche' : "Fine classe terza", 'argomento_obiettivo' : "Relazioni, dati e previsioni"})
+    mat_ob_elem_quinta_spazio = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola primaria", 'classi_scolastiche' : "Fine classe quinta", 'argomento_obiettivo' : "Spazio e figure"})
+    mat_ob_elem_quinta_relazioni = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola primaria", 'classi_scolastiche' : "Fine classe quinta", 'argomento_obiettivo' : "Relazioni, dati e previsioni"})
+    matematica_traguardi_medie = handle.indicazioninazionali.find({'traguardo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola secondaria primo grado" })
+    mat_ob_medie_numeri = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola secondaria primo grado", 'argomento_obiettivo' : "Numeri"})
+    mat_ob_medie_dati = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola secondaria primo grado", 'argomento_obiettivo' : "Dati e previsioni"})
+    scienze_traguardi_elementari = handle.indicazioninazionali.find({'traguardo':{'$exists': True}, 'area_disciplinare': "Scienze", 'grado_scolastico': "Scuola primaria" })
+    tecnologia_ob_elem_vedere = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Tecnologia", 'grado_scolastico': "Scuola primaria", 'argomento_obiettivo' : "Vedere e osservare" })
+    tecnologia_traguardi_med = handle.indicazioninazionali.find({'traguardo':{'$exists': True}, 'area_disciplinare': "Tecnologia", 'grado_scolastico': "Scuola secondaria primo grado"})
+    tecnologia_ob_medie_prevedere = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Tecnologia", 'grado_scolastico': "Scuola secondaria primo grado", 'argomento_obiettivo' : "Prevedere, immaginare e progettare" })
+    tecnologia_ob_medie_intervenire = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Tecnologia", 'grado_scolastico': "Scuola secondaria primo grado", 'argomento_obiettivo' : "Intervenire, trasformare e produrre" })
+    return render_template('indicazioninazionali.html', traguardi=traguardi, matematica_traguardi_elementari=matematica_traguardi_elementari, mat_ob_elem_terza_numeri=mat_ob_elem_terza_numeri, mat_ob_elem_terza_spazio=mat_ob_elem_terza_spazio, mat_ob_elem_terza_relazioni=mat_ob_elem_terza_relazioni, mat_ob_elem_quinta_spazio=mat_ob_elem_quinta_spazio, mat_ob_elem_quinta_relazioni=mat_ob_elem_quinta_relazioni, matematica_traguardi_medie=matematica_traguardi_medie, mat_ob_medie_numeri=mat_ob_medie_numeri, mat_ob_medie_dati=mat_ob_medie_dati, scienze_traguardi_elementari=scienze_traguardi_elementari, tecnologia_ob_elem_vedere=tecnologia_ob_elem_vedere, tecnologia_traguardi_med=tecnologia_traguardi_med, tecnologia_ob_medie_prevedere=tecnologia_ob_medie_prevedere, tecnologia_ob_medie_intervenire=tecnologia_ob_medie_intervenire)
 
-    return response
-
+def modify_img_path(imgpath):
+    p = re.compile(r'/static/tasks/immagini/')
+    return p.sub('/Users/annalisacalcagni/Documents/bebras/static/tasks/immagini/', imgpath)
 
 def findTask():
     result = request.args["id_quesito"]
@@ -70,12 +100,32 @@ def findTask():
     return task
 
 
+# Classe che crea il pdf dall'html
+class Pdf():
+
+    def render_pdf(self, html):
+
+        from xhtml2pdf import pisa
+        from StringIO import StringIO
+
+        pdf = StringIO()
+
+        pisa.CreatePDF(StringIO(html), pdf)
+
+        return pdf.getvalue()
+
+#def findIndicazioni():
+ #   result = request.args["indicazioni_nazionali"]
+
+  #  task = handle.indicazioninazionali.find({'id': })
+   # return task
+
 # Remove the "debug=True" for production
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
     port = int(os.environ.get('PORT', 5000))
 
-    app.run(host='0.0.0.0', port=port, debug=True)
+    app.run(host='127.0.0.1', port=port, debug=True)
 
 
 # Ricerca delle info sul task, ora rimpiazzato dallo script dataTables

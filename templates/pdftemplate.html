@@ -1,3 +1,60 @@
-<h1>Prova</h1>
+<html>
+	<head>
+		<title>Esporta in PDF</title>
+	</head>
 
-<img src="/static/tasks/immagini/{{task.testo}}" alt="" style="height:auto; width: auto">{{task.soluzione}}
+<!-- div {page-break-inside: avoid;} -->
+
+	<body>
+
+		<h1 style="text-align: left; color: rgb(2,116,215); font-weight: bold">{{titolo}}</h1>
+		<h3 style="text-align: left; color: rgb(2,116,215); padding-bottom: 1%"> <b>Categoria:</b>
+        {% for n in task.categoria %}
+        {{n}}
+        {% endfor %}
+        </h3>
+        <div>
+			{% if data.testo == '1' %}
+				<img src="/static/tasks/immagini/{{task.testo}}" alt="" style="width:100%; padding-right: 4%; padding-left: 2%; padding-bottom: 2%">
+			{% endif %}
+
+
+		<table style="border:0"  class="breakpagepdf" >
+		
+		{% if data.spiegazione == '1' %}
+		<tr style="page-break-before: avoid; padding-bottom: 3%;">
+		<td>
+		<h2 style="text-align: left; color: rgb(2,116,215); text-decoration: underline">Soluzione e spiegazione del quesito </h2>
+
+	    	{% autoescape false %}
+    			{{task.spiegazione}}
+    		{% endautoescape %}
+		</td></tr>
+		{% endif %}
+
+		{% if data.argomento == '1' %}
+		<tr style="page-break-before: avoid; padding-bottom: 3%;">
+		<td>
+		<h2 style="text-align: left; color: rgb(2,116,215); text-decoration: underline">Anche questa è informatica </h2>
+   			{% autoescape false %}
+    			{{task.anchequestainformatica}}
+    		{% endautoescape %}
+		</td></tr>
+		{% endif %}
+
+
+		{% if data.traguardi == '1' %}
+		<tr style="page-break-before: avoid; padding-bottom: 3%;">
+		<td>
+		<h2 style="text-align: left; color: rgb(2,116,215); text-decoration: underline">Indicazioni nazionali</h2>
+    		{% autoescape false %}
+    			{{task.traguardi}}
+    		{% endautoescape %}
+		</td></tr>
+		{% endif %}
+
+		</table>
+
+		</div>
+	</body>
+</html>

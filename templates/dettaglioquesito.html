@@ -1,5 +1,11 @@
+<!-- DETTAGLIOQUESITO.HTML -->
 {% extends "task.html" %}
-{% block task %}  
-<img src="/static/tasks/immagini/{{task.testo}}" alt="" style="height:auto; width: auto">
+{% block task %}
 
+<div style="border-style: groove">
+	<img src="/static/tasks/immagini/{{task.testo}}" alt="" style="width:100%; padding-right: 4%; padding-left: 2%; padding-bottom: 2%">
+</div>
+
+<!-- END DETTAGLIOQUESITO.HTML -->
 {% endblock %}
+

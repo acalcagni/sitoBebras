@@ -1,46 +1,56 @@
+<!-- INDEX.HTML -->
 <!doctype html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
-<link rel=stylesheet type=text/css href="{{ url_for('static', filename='font-awesome/css/font-awesome.min.css') }}">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<script src="{{ url_for('static', filename='jquery.dataTables.min.js') }}"></script>
-<script src="{{ url_for('static', filename='dataTables.bootstrap4.min.js') }}"></script>
-<script src="{{ url_for('static', filename='script.js') }}"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+	<link rel=stylesheet type=text/css href="{{ url_for('static', filename='font-awesome/css/font-awesome.min.css') }}">
 
-<title>Quesiti Bebras dell'Informatica</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="{{ url_for('static', filename='jquery.dataTables.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='dataTables.bootstrap4.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+	<title>Quesiti Bebras dell'Informatica</title>
 </head>
 
 <body>
-
-				<div class="jumbotron"> 
+	<div class="jumbotron"> 
 		<div class="row">
-				<div class="col-3">
+			<div class="col-3">
 				<img src="/static/tasks/immagini/logobebras.png" alt="" class="img-fluid" style="width: 400px; padding: 1em; padding-right: 4em">
-				</div> <!-- col-3 -->
-				<div class="col-9">
-  					<h1 class="display-3">Quesiti Bebras dell'Informatica</h1>
-  					<p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  					<hr class="my-4">
-  					<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  					<p class="lead">
-    					<a class="btn btn-primary btn-lg" href="/elencoquesiti" role="button">Elenco quesiti</a>
-    					<a class="btn btn-primary btn-lg" href="/indicazioninazionali" role="button">Indicazioni nazionali</a>
-  					</p> <!-- close lead -->
-  					</div> 
+			</div> <!-- col-3 -->
 
-		</div> <!-- close row -->
-				</div> <!-- close jumbotron -->
-
-
+			<div class="col-9">
+  				<h1 class="display-3">Quesiti Bebras dell'Informatica</h1>
+  				<p class="lead"></p>
+  				<hr class="my-4">
+  				<div class="row" style="padding-top: 3%">
+  					<div class="col-1">
+  					</div>
+  					<div class="col-4">
+  						<p class="lead" style="height:250px">Nella sezione "Elenco quesiti" sono disponibili tutti i quesiti utilizzati nelle gare del Bebras dell'Informatica, con le relative soluzioni e spiegazioni.</p>
+              <a class="btn btn-primary btn-lg" href="/elencoquesiti" role="button" style="display: flex; justify-content: center;">Elenco quesiti</a>
+  					</div>
+  					<div class="col-1">
+  					</div>
+  					<div class="col-4">
+  						<p class="lead"  style="height:250px">Nella sezione "Indicazioni nazionali" sono riportati alcuni traguardi e obiettivi estratti dalle indicazioni ministeriali collegati ai quesiti Bebras.
+  						</p>
+  						<a class="btn btn-primary btn-lg" href="/indicazioninazionali" role="button" style="display: flex; justify-content: center;">Indicazioni nazionali</a>
+  					</div>
+  					<div class="col-1">
+  					</div>
+  				</div>
+  			</div> <!-- end col-9 -->
+  		</div> <!-- end row -->
+	</div> <!-- end jumbotron -->
 </body>
-
 </html>
+<!-- END INDEX.HTML -->
