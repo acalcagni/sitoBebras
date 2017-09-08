@@ -1,11 +1,20 @@
 
 $(document).ready(function(){
 
-
-
  $("#myModal").draggable({
       handle: ".modal-header"
   });
+
+$('.openall').click(function(){
+  $('.panel-collapse:not(".in")')
+    .collapse('show');
+});
+
+$('.closeall').click(function(){
+  $('.panel-collapse')
+    .collapse('hide');
+});
+
 
 
     $('.filterable .btn-filter').click(function(){
@@ -123,3 +132,4 @@ $('#titoloSearch').on( 'keyup', function () {
 
  
 });
+

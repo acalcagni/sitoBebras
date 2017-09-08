@@ -184,3 +184,24 @@ opacity: 0 !important;
 .breakpagepdf{
 page-break-before: always;
 }
+
+mark {
+  background: orange;
+  color: black;
+}
+
+span.highlight{
+  background: #f1c40f;
+}
+
+/**
+ * The following is not related to the plugin
+ */
+body{
+  background: #fbfcfc;
+}
+.container{
+  max-width: 700px;
+}
+
+
