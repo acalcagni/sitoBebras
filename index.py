@@ -32,8 +32,12 @@ def elencoquesiti():
     type = request.args.get("type")
     id = request.args.get("id")
     
-    if type and id:
+    if type=="indicazioni":
         quesiti = handle.tasks.find({'indicazioni_nazionali':{'$in':[id]}})
+    
+    if type=="ct":
+        quesiti = handle.tasks.find({'computational_thinking':{'$in':[id]}})
+    
     else:
         quesiti = handle.tasks.find()
     return render_template('elencoquesiti.html', quesiti=quesiti)
@@ -74,21 +78,26 @@ def generaPdf():
 @app.route("/indicazioninazionali", methods=['GET'])
 def indicazioninazionali():
     traguardi = handle.indicazioninazionali.find({'traguardo':{'$exists': True}})
-    matematica_traguardi_elementari = handle.indicazioninazionali.find({'traguardo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola primaria" })
-    mat_ob_elem_terza_numeri = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola primaria", 'classi_scolastiche' : "Fine classe terza", 'argomento_obiettivo' : "Numeri"})
-    mat_ob_elem_terza_spazio = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola primaria", 'classi_scolastiche' : "Fine classe terza", 'argomento_obiettivo' : "Spazio e figure"})
-    mat_ob_elem_terza_relazioni = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola primaria", 'classi_scolastiche' : "Fine classe terza", 'argomento_obiettivo' : "Relazioni, dati e previsioni"})
-    mat_ob_elem_quinta_spazio = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola primaria", 'classi_scolastiche' : "Fine classe quinta", 'argomento_obiettivo' : "Spazio e figure"})
-    mat_ob_elem_quinta_relazioni = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola primaria", 'classi_scolastiche' : "Fine classe quinta", 'argomento_obiettivo' : "Relazioni, dati e previsioni"})
-    matematica_traguardi_medie = handle.indicazioninazionali.find({'traguardo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola secondaria primo grado" })
-    mat_ob_medie_numeri = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola secondaria primo grado", 'argomento_obiettivo' : "Numeri"})
-    mat_ob_medie_dati = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola secondaria primo grado", 'argomento_obiettivo' : "Dati e previsioni"})
-    scienze_traguardi_elementari = handle.indicazioninazionali.find({'traguardo':{'$exists': True}, 'area_disciplinare': "Scienze", 'grado_scolastico': "Scuola primaria" })
-    tecnologia_ob_elem_vedere = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Tecnologia", 'grado_scolastico': "Scuola primaria", 'argomento_obiettivo' : "Vedere e osservare" })
-    tecnologia_traguardi_med = handle.indicazioninazionali.find({'traguardo':{'$exists': True}, 'area_disciplinare': "Tecnologia", 'grado_scolastico': "Scuola secondaria primo grado"})
-    tecnologia_ob_medie_prevedere = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Tecnologia", 'grado_scolastico': "Scuola secondaria primo grado", 'argomento_obiettivo' : "Prevedere, immaginare e progettare" })
-    tecnologia_ob_medie_intervenire = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Tecnologia", 'grado_scolastico': "Scuola secondaria primo grado", 'argomento_obiettivo' : "Intervenire, trasformare e produrre" })
+    matematica_traguardi_elementari = handle.indicazioninazionali.find({'traguardo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola primaria" }).sort('id_indicazioni',1)
+    mat_ob_elem_terza_numeri = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola primaria", 'classi_scolastiche' : "Fine classe terza", 'argomento_obiettivo' : "Numeri"}).sort('id_indicazioni',1)
+    mat_ob_elem_terza_spazio = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola primaria", 'classi_scolastiche' : "Fine classe terza", 'argomento_obiettivo' : "Spazio e figure"}).sort('id_indicazioni',1)
+    mat_ob_elem_terza_relazioni = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola primaria", 'classi_scolastiche' : "Fine classe terza", 'argomento_obiettivo' : "Relazioni, dati e previsioni"}).sort('id_indicazioni',1)
+    mat_ob_elem_quinta_spazio = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola primaria", 'classi_scolastiche' : "Fine classe quinta", 'argomento_obiettivo' : "Spazio e figure"}).sort('id_indicazioni',1)
+    mat_ob_elem_quinta_relazioni = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola primaria", 'classi_scolastiche' : "Fine classe quinta", 'argomento_obiettivo' : "Relazioni, dati e previsioni"}).sort('id_indicazioni',1)
+    matematica_traguardi_medie = handle.indicazioninazionali.find({'traguardo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola secondaria primo grado" }).sort('id_indicazioni',1)
+    mat_ob_medie_numeri = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola secondaria primo grado", 'argomento_obiettivo' : "Numeri"}).sort('id_indicazioni',1)
+    mat_ob_medie_dati = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Matematica", 'grado_scolastico': "Scuola secondaria primo grado", 'argomento_obiettivo' : "Dati e previsioni"}).sort('id_indicazioni',1)
+    scienze_traguardi_elementari = handle.indicazioninazionali.find({'traguardo':{'$exists': True}, 'area_disciplinare': "Scienze", 'grado_scolastico': "Scuola primaria" }).sort('id_indicazioni',1)
+    tecnologia_ob_elem_vedere = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Tecnologia", 'grado_scolastico': "Scuola primaria", 'argomento_obiettivo' : "Vedere e osservare" }).sort('id_indicazioni',1)
+    tecnologia_traguardi_med = handle.indicazioninazionali.find({'traguardo':{'$exists': True}, 'area_disciplinare': "Tecnologia", 'grado_scolastico': "Scuola secondaria primo grado"}).sort('id_indicazioni',1)
+    tecnologia_ob_medie_prevedere = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Tecnologia", 'grado_scolastico': "Scuola secondaria primo grado", 'argomento_obiettivo' : "Prevedere, immaginare e progettare" }).sort('id_indicazioni',1)
+    tecnologia_ob_medie_intervenire = handle.indicazioninazionali.find({'obiettivo':{'$exists': True}, 'area_disciplinare': "Tecnologia", 'grado_scolastico': "Scuola secondaria primo grado", 'argomento_obiettivo' : "Intervenire, trasformare e produrre" }).sort('id_indicazioni',1)
     return render_template('indicazioninazionali.html', traguardi=traguardi, matematica_traguardi_elementari=matematica_traguardi_elementari, mat_ob_elem_terza_numeri=mat_ob_elem_terza_numeri, mat_ob_elem_terza_spazio=mat_ob_elem_terza_spazio, mat_ob_elem_terza_relazioni=mat_ob_elem_terza_relazioni, mat_ob_elem_quinta_spazio=mat_ob_elem_quinta_spazio, mat_ob_elem_quinta_relazioni=mat_ob_elem_quinta_relazioni, matematica_traguardi_medie=matematica_traguardi_medie, mat_ob_medie_numeri=mat_ob_medie_numeri, mat_ob_medie_dati=mat_ob_medie_dati, scienze_traguardi_elementari=scienze_traguardi_elementari, tecnologia_ob_elem_vedere=tecnologia_ob_elem_vedere, tecnologia_traguardi_med=tecnologia_traguardi_med, tecnologia_ob_medie_prevedere=tecnologia_ob_medie_prevedere, tecnologia_ob_medie_intervenire=tecnologia_ob_medie_intervenire)
+
+@app.route("/computationalthinking", methods=['GET'])
+def computationalthinking():
+    risultato = handle.computationalthinking.find().sort('id_ct',1)
+    return render_template('computationalthinking.html', risultato=risultato)
 
 def modify_img_path(imgpath):
     p = re.compile(r'/static/tasks/immagini/')

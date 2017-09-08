@@ -1,0 +1,18 @@
+<!-- computationalthinking.html -->
+
+{% extends "template.html" %}
+{% block body %}
+
+<div name="div esterno" style="padding-left: 5%; padding-right: 5%; padding-bottom: 5%">
+
+  <h3 style="text-align: left; color: rgb(2,116,215); font-weight: bold; padding-bottom: 1%; padding-top: 2%">Pensiero computazionale</h3>
+  <h5 style="padding-bottom: 1%">A partire da una definizione di Pensiero Computazionale si possono definire i seguenti tipi di quesiti:</h5>
+
+  {% for n in risultato%}
+    <ul>
+      <li><b>{{n.titolo_ct}}</b>:<br>{{n.testo_ct}}<br><a href="/elencoquesiti?type=ct&id={{n.id_ct}}">Vedi i quesiti Bebras attinenti</a></li>
+    </ul>
+  {% endfor %}
+</div>
+{% endblock %}
+<!-- END computationalthinking.html -->
