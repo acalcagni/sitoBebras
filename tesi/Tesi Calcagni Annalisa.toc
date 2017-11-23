@@ -1,0 +1,21 @@
+\select@language {italian}
+\select@language {italian}
+\contentsline {chapter}{Introduzione}{1}{chapter*.2}
+\contentsline {chapter}{\numberline {1}I giochi Bebras dell'Informatica}{4}{chapter.1}
+\contentsline {section}{\numberline {1.1}I quesiti Bebras}{8}{section.1.1}
+\contentsline {section}{\numberline {1.2}Classificazione dei quesiti Bebras}{11}{section.1.2}
+\contentsline {chapter}{\numberline {2}Indicazioni nazionali e Bebras}{24}{chapter.2}
+\contentsline {section}{\numberline {2.1}L'informatica nella scuola italiana}{24}{section.2.1}
+\contentsline {section}{\numberline {2.2}L'informatica nelle indicazioni nazionali per la scuola}{27}{section.2.2}
+\contentsline {section}{\numberline {2.3}Relazione tra Bebras e Indicazioni Nazionali}{33}{section.2.3}
+\contentsline {chapter}{\numberline {3}Il computational thinking e i quesiti Bebras}{46}{chapter.3}
+\contentsline {section}{\numberline {3.1}Il pensiero computazionale}{46}{section.3.1}
+\contentsline {section}{\numberline {3.2}I quesiti Bebras descritti attraverso il pensiero computazionale}{49}{section.3.2}
+\contentsline {section}{\numberline {3.3}Riscontri degli insegnanti}{57}{section.3.3}
+\contentsline {chapter}{Conclusioni}{66}{chapter*.3}
+\contentsline {chapter}{\numberline {A}Indicazioni nazionali affini all'informatica}{68}{appendix.Alph1}
+\contentsline {chapter}{\numberline {B}Applicazione web per i quesiti Bebras}{75}{appendix.Alph2}
+\contentsline {section}{\numberline {B.1}Tecnologie utilizzate}{76}{section.Alph2.1}
+\contentsline {subsection}{\numberline {B.1.1}MongoDB}{76}{subsection.Alph2.1.1}
+\contentsline {subsection}{\numberline {B.1.2}Flask}{77}{subsection.Alph2.1.2}
+\contentsline {section}{\numberline {B.2}Descrizione delle funzionalit\IeC {\`a}}{77}{section.Alph2.2}
