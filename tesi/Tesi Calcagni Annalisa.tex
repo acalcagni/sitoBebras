@@ -59,34 +59,31 @@
 %
 \prefacesection{Introduzione}
 
-\begin{comment} PER INTRODUZIONE
-Il ``Bebras dell'Informatica'' è un concorso internazionale che offre agli studenti delle scuole primarie e secondarie la possibilità di avvicinarsi al mondo dell'informatica in modo divertente attraverso una gara non competitiva.
-\end{comment}
-
-Il lavoro descritto in questa tesi ha come obiettivo principale quello di analizzare la situazione attuale nella scuola primaria e secondaria di primo grado della didattica dell'informatica e proporre uno strumento per l'insegnamento di questa disciplina.
-Infatti l'insegnamento dell'informatica riveste un ruolo importante per i seguenti motivi \cite{InformaticaScuola}:
-\begin{itemize}
-	\item \textit{incrementa la creatività} grazie ai numerosi metodi che offre per affrontare e risolvere un problema;
-	\item \textit{sviluppa la costruttività} grazie alla progettazione di algoritmi;
-	\item \textit{aiuta a padroneggiare la complessità}, infatti affrontare problemi informatici aiuta a risolvere questioni più complesse riguardanti altre aree;
-	\item \textit{potenzia il ragionamento accurato} attraverso la scrittura di programmi in cui è necessaria l'esattezza in ogni minimo dettaglio.
-\end{itemize}
-Il ruolo dell'informatica, come quello della matematica, nella scuola primaria e secondaria è duplice: \textit{pratico} perché qualsiasi lavoro svolgeranno in futuro gli studenti la componente digitale sarà importante, e contemporaneamente \textit{formativo} perché l'informatica è un valido strumento intellettuale per sviluppare abilità concettuali essenziali qualunque sia lo sviluppo professionale degli alunni.
+L'informatica nella scuola primaria e secondaria di primo grado non è prevista come disciplina curricolare; spesso infatti si limita all'uso di computer, tablet e programmi applicativi. L'informatica, intesa come disciplina scientifica, ha un grande valore formativo qualunque sia il successivo sviluppo professionale degli studenti. Il contributo culturale più significativo che offre questa disciplina, al di là degli aspetti tecnologici o strumentali, è il pensiero computazionale: formulare i problemi in modo che possano essere risolti in maniera automatica da agenti autonomi, organizzare e analizzare logicamente le informazioni, rappresentarle attraverso modelli e astrazioni, automatizzare lo svolgimento di compiti tramite sequenze di passi ordinati, generalizzare e trasferire processi risolutivi a una grande varietà di situazioni diverse. 
+Si tratta dunque di competenze trasversali, come nel caso del linguaggio naturale o del ragionamento logico, che trovano utilità e possono essere declinate in tutti gli ambiti disciplinari e che meritano di essere proposte anche nella pratica scolastica.
 
 
-L'aspetto scientifico dell'informatica aiuta a sviluppare competenze logiche e capacità di risoluzione dei problemi cioè il pensiero computazionale: una risorsa per promuoverlo fin dai primi anni di scuola sono i quesiti Bebras. Questi sono problemi proposti nelle gare Bebras: un concorso internazionale organizzato annualmente per gli studenti delle scuole primarie e secondarie il cui scopo è la divulgazione scientifica dell'informatica.
+Negli ultimi anni nel panorama scolastico sono state proposte numerose iniziative per avvicinare i ragazzi agli aspetti scientifici dell'informatica, tra cui i giochi ``Bebras dell'informatica'': gara annuale non competitiva che offre agli studenti della scuola primaria e secondaria di primo grado la possibilità di avvicinarsi all'informatica in modo divertente.
+Il Bebras è un'iniziativa internazionale che coinvolge più di 50 Paesi e più di un milione e mezzo di partecipanti nel 2016.
+Queste gare sono composte da quesiti, cioè problemi focalizzati sullo sviluppo del pensiero computazionale che sono una potenziale risorsa per l'insegnamento dell'informatica da usare anche al di fuori del contesto della gara annuale.
 
-In questo lavoro di tesi ci si concentra sulla situazione nella scuola italiana primaria e secondaria di primo grado, in cui l'informatica è insegnata come utilizzo del computer piuttosto che come disciplina scientifica.
-\`{E} stata fatta un'analisi delle Indicazioni Nazionali per il curricolo del primo ciclo d'istruzione fornite dal Ministero dell'Istruzione e sono stati trovati dei collegamenti ``nascosti'' all'informatica.
-Successivamente è stato fatto un lavoro di analisi e corrispondenza tra i quesiti della gara Bebras e le Indicazioni Nazionali per verificare come questi quesiti possano essere utilizzati all'interno del curricolo scolastico.
-Dopo aver evidenziato i legami tra i quesiti Bebras e gli obiettivi didattici indicati dal Ministero dell'Istruzione, è nata l'esigenza di permettere ai docenti di reperire questo materiale. \`{E} stata quindi proposta una classificazione dei quesiti tramite la lente di lettura della definizione operazionale del pensiero computazionale che evidenzia gli aspetti educativi e le potenzialità didattiche di ogni quesito.
-Infine è stata sviluppata un'applicazione web il cui scopo è rendere accessibili a tutti i docenti i quesiti Bebras proponendo per ognuno di essi la relativa soluzione, spiegazione e corrispondenze sia con le Indicazioni Nazionali che con lil pensiero computazionale.
-\\
+L'obiettivo principale di questa tesi è stato trovare le modalità più adeguate a presentare i quesiti Bebras esplicitando il loro potenziale didattico affinché anche docenti con una formazione non informatica li possano utilizzare nel migliore dei modi all'interno di percorsi curricolari.
+A tal proposito abbiamo individuato due lenti di lettura dei quesiti: attraverso le indicazioni curricolari proposte dal Ministero e attraverso le abilità del pensiero computazionale.
 
-La tesi ha la struttura seguente. Il capitolo \ref{cap1} presenta le gare Bebras e i quesiti contenuti in questo concorso, quindi viene esposto un excursus sulle classificazioni dei quesiti proposte fino ad ora.
-Il capitolo \ref{cap2} riporta la situazione attuale nella scuola italiana dell'insegnamento dell'Informatica nella primaria e secondaria di primo grado e viene evidenziata la corrispondenza tra le Indicazioni Nazionali proposte dal Ministero dell'Istruzione e i quesiti Bebras.
-Il capitolo \ref{cap3} richiama il concetto di pensiero computazionale e la sua definizione operazionale che viene utilizzata come lente di lettura per una classificazione dei quesiti Bebras, quindi riporta le osservazioni ottenute dalle interviste fatte ai docenti sull'uso e la comprensione della suddetta classificazione.
-Infine l'appendice presenta l'applicazione web sviluppata per rendere usufruibile ai docenti i quesiti Bebras.
+Abbiamo svolto un'attenta analisi delle Indicazioni Nazionali Ministeriali per il primo ciclo in cui abbiamo rilevato numerosi riferimenti ``nascosti'' all'informatica, nonostante questa non sia prevista come disciplina curricolare. A partire da questa analisi, per ogni traguardo e obiettivo affine all'informatica è stato individuato un quesito Bebras che può essere utilizzato come strumento didattico in quello specifico contesto.
+
+Per rendere esplicito il potenziale formativo dei quesiti Bebras anche a docenti privi di una formazione informatica, abbiamo descritto le abilità del pensiero computazionale facendo riferimento ai quesiti che possono promuovere le abilità in questione.
+Successivamente sono state svolte delle interviste ad alcuni insegnanti per verificare l'esito positivo del nostro approccio.
+
+Questo lavoro ha evidenziato che presentare i quesiti Bebras attraverso le Indicazioni Nazionali e le abilità del pensiero computazionale favoriscono l'identificazione del potenziale formativo e quindi l'utilizzo da parte dei docenti nel modo e nel contesto più adeguato.
+Per tale motivo abbiamo sviluppato un'applicazione web che raccoglie i quesiti Bebras delle edizioni passate e li mette a disposizione attraverso entrambe le chiavi di lettura individuate in questa tesi.
+
+
+La tesi ha la struttura seguente. Il capitolo \ref{cap1} presenta le gare Bebras e descrive la tipologia e i contenuti dei quesiti proposti in questa gara.
+Il capitolo \ref{cap2} descrive la situazione attuale dell'insegnamento dell'informatica nella scuola italiana. Si analizzano le Indicazioni Nazionali al fine di trovare dei riferimenti all'informatica e successivamente vengono proposte alcune corrispondenze tra i quesiti Bebras e le indicazioni ministeriali affini all'informatica.
+Il capitolo \ref{cap3} discute il concetto di pensiero computazionale e se ne dà in particolare una descrizione operativa che viene utilizzata successivamente per la lettura dei quesiti Bebras. Infine si riportano i riscontri e le osservazioni derivate dalle interviste ai docenti.
+L'appendice \ref{ElencoIndicazioni} presenta l'elenco dei traguardi e degli obiettivi delle Indicazioni Nazionali affini all'informatica.
+L'appendice \ref{Applicazione} presenta l'applicazione web sviluppata durante il lavoro di tesi con l'obiettivo di rendere i quesiti Bebras consultabili attraverso le lenti di lettura proposte in questa tesi.
 %
 %
 % 
@@ -95,7 +92,7 @@ Infine l'appendice presenta l'applicazione web sviluppata per rendere usufruibil
 \chapter{I giochi Bebras dell'Informatica}
 \label{cap1}
 % nell'introduzione si definisce cos'è il bebras
-I giochi Bebras dell'Informatica nascono in Lituania da un'idea di Valentina Dagiene, docente presso l'Università di Vilnius, che vuole trovare uno strumento divertente per avvicinare i ragazzi alla disciplina informatica. Per fare ciò Dagiene sceglie di organizzare dei giochi sotto la forma di gara: la competizione infatti risulta essere un metodo didattico vincente per attirare l'attenzione degli studenti e suscitare il loro interesse. Nel panorama internazionale, da prima della nascita del Bebras dell'informatica, sono già presenti gare informatiche: una delle più famose sono le ``Olimpiadi internazionali dell'informatica'' il cui scopo è selezionare studenti particolarmente talentuosi in questa disciplina. Le gare Bebras, invece, pongono l'attenzione sulla divulgazione dell'informatica come disciplina scientifica, si tratta infatti di una gara non competitiva.
+I giochi Bebras dell'informatica nascono in Lituania da un'idea di Valentina Dagiene, docente presso l'Università di Vilnius, che vuole trovare uno strumento divertente per avvicinare i ragazzi alla disciplina informatica. Per fare ciò Dagiene sceglie di organizzare dei giochi sotto la forma di gara: la competizione infatti risulta essere un metodo didattico vincente per attirare l'attenzione degli studenti e suscitare il loro interesse. Nel panorama internazionale, da prima della nascita del Bebras dell'informatica, sono già presenti gare informatiche: una delle più famose sono le ``Olimpiadi internazionali dell'informatica'' il cui scopo è selezionare studenti particolarmente talentuosi in questa disciplina. Le gare Bebras, invece, pongono l'attenzione sulla divulgazione dell'informatica come disciplina scientifica, si tratta infatti di una gara non competitiva.
 
 Il nome ``Bebras'', in lituano \textit{castoro}, é stato scelto perché le caratteristiche dell'animale stesso quali la laboriosità, la creatività, la tenacità e la vivacità siano stimolate nei partecipanti a queste gare.
 
@@ -136,7 +133,7 @@ A conclusione del workshop quindi si ottiene un insieme consistente di quesiti d
 %
 \section{I quesiti Bebras}
 
-I quesiti Bebras, come detto nella sezione precedente, sono i problemi che compongono una gara.
+I quesiti Bebras, come detto nel paragrafo precedente, sono i problemi che compongono una gara.
 Di seguito si riportano alcuni esempi dell'edizione italiana delle gare; si può notare che non vengono richieste conoscenze pregresse, ma lo scopo è che gli studenti scoprano i concetti informatici attraverso problemi divertenti.
 
 \begin{figure}[H]
@@ -168,13 +165,13 @@ Un aspetto molto importante e discusso dalle prime edizioni delle gare è la qua
 Un altro aspetto fondamentale molto sentito all'interno della comunità Bebras è l'assegnazione della corretta difficoltà ai quesiti. Il rischio infatti è di lasciare ai partecipanti la percezione che la gara risulti essere o troppo semplice o troppo difficile e quindi poco accattivante.
 L'unico modo per stimare il livello di difficoltà di un quesito è quello di basarsi sull'esperienza e sull'intuito degli organizzatori: non vi è infatti una tecnica scientifica da poter applicare se non l'analisi delle gare svolte nei precedenti anni e i relativi risultati. A tal riguardo nel 2015 Bellettini \textit{et al.} \cite{BellettiniITICSE2015} analizzano i risultati dell'edizione italiana del 2014 delle gare Bebras attraverso un modello statistico per verificare se la difficoltà percepita dagli studenti è sostanzialmente diversa da quella stimata dagli organizzatori ottenendo come risultato che solo in un terzo dei casi i quesiti sono mal stimati. Oltre alle analisi delle gare a posteriori, nel 2013 Wilem van der Vegt \cite{WilemDifficulty} stila un questionario da proporre agli organizzatori, prima dell'assegnazione del livello di difficoltà dei quesiti, per far emergere eventuali elementi che possano essere cause di difficoltà per i partecipanti alle gare.
 
-Un ulteriore tema affrontato nella comunità Bebras è relativo alla classificazione dei quesiti che verrà approfondito nella Sezione 2.
+Un ulteriore tema affrontato nella comunità Bebras è relativo alla classificazione dei quesiti che verrà approfondito nel paragrafo \ref{Classificazione}.
 
 %
 %
 %	
 \section{Classificazione dei quesiti Bebras}\label{Classificazione}
-Durante il workshop annuale, come visto nella sezione precedente, viene creato un insieme di quesiti Bebras dal quale le delegazioni locali selezionano quelli da proporre nella gara del proprio Paese. Quindi all'interno della comunità nasce l'esigenza di associare i quesiti a categorie riguardanti temi informatici così da facilitare la selezione locale dei quesiti e poter presentare questa disciplina nel modo più completo possibile.
+Durante il workshop annuale, come visto nel paragrafo precedente, viene creato un insieme di quesiti Bebras dal quale le delegazioni locali selezionano quelli da proporre nella gara del proprio Paese. Quindi all'interno della comunità nasce l'esigenza di associare i quesiti a categorie riguardanti temi informatici così da facilitare la selezione locale dei quesiti e poter presentare questa disciplina nel modo più completo possibile.
 
 Una prima proposta di classificazione è stata messa a punto nel 2008 da Dagiene e Futschek \cite{DagieneISEEP2008}, ed è stata utilizzata come riferimento per la preparazione delle gare fino al 2016, una seconda nel 2009 da Kalas e Tomcsanyiova [12]. Si tratta in entrambi i casi di elenchi di argomenti informatici proposti e non di vere e proprie classificazioni. Inoltre gli articoli non illustrano come associare quesiti e categorie, né forniscono esempi a riguardo.
 L'elenco di argomenti informatici proposto è il seguente:
@@ -195,7 +192,7 @@ L'elenco di argomenti informatici proposto è il seguente:
 
 Nel 2009 Kalas e Tomcsanyiova \cite{KalasIFIP2009} propongono una rivisitazione delle categorie proposte in \cite{DagieneISEEP2008}: l'uso dei sistemi informatici e l'impatto sulla società (3 e 6) vengono accorpati in ``Alfabetizzazione digitale''; gli argomenti riguardanti l'informazione e le strutture (1 e 4) sono unificate sotto il titolo ``Gestione dei dati''; in ``Problem solving''  è incluso l'ambito dei puzzle (5) insieme al ragionamento logico, la giustificazione, l'argomentazione, le strategie per la risoluzione dei problemi; infine all'interno di ``Programmazione'' vengono inseriti il tema del pensiero algoritmico (2), la descrizione formale di una soluzione, di un processo, di un comportamento, la comprensione, l'analisi, l'interpretazione e la composizione di tali descrizioni. 
  
-Entrambe le proposte contengono categorie riguardanti l'utilizzo del computer e questioni sociali: le gare Bebras, come detto nella sezione precedente, nei primi anni presentano alcuni quesiti focalizzati sull'alfabetizzazione digitale. Negli anni successivi i quesiti di questa tipologia si riducono sempre di più fino a scomparire e gradualmente l'obiettivo delle gare Bebras diventa quello di presentare l'informatica intesa come disciplina scientifica e di sviluppare il pensiero computazionale. 
+Entrambe le proposte contengono categorie riguardanti l'utilizzo del computer e questioni sociali: le gare Bebras, come detto nel paragrafo precedente, nei primi anni presentano alcuni quesiti focalizzati sull'alfabetizzazione digitale. Negli anni successivi i quesiti di questa tipologia si riducono sempre di più fino a scomparire e gradualmente l'obiettivo delle gare Bebras diventa quello di presentare l'informatica intesa come disciplina scientifica e di sviluppare il pensiero computazionale. 
 Il cambio di obiettivo fa sentire la necessità di nuove classificazioni in cui si prendano in considerazione i cambiamenti avvenuti. A tal riguardo sono state proposte la classificazione di Pohl e Westmeyer \cite{PohlLNCS2015} nel 2015, basata esclusivamente su argomenti informatici, e quella di Dagiene \textit{et al.} \cite{DagieneINFORMATICA2017} in cui sono considerate sia le aree informatiche che il pensiero computazionale.
 
 Pohl e Westmeyer \cite{PohlLNCS2015} vogliono ottenere una struttura che permetta una classificazione a grana fine, che sia organizzata gerarchicamente per permettere la categorizzazione su diversi livelli di dettaglio ed infine che permetta la categorizzazione su concetti sia generali che specifici.
@@ -344,8 +341,8 @@ Inoltre il punto ``Creare'' è descritto come ``mettere insieme informazioni'': 
 
 
 
-Tra tutte le classificazioni esposte in questa sezione solo quella bidimensionale proposta da Dagiene \textit{et al.} \cite{DagieneINFORMATICA2017} nel 2017 introduce una novità nello scopo della classificazione: non si vuole solo ottenere una distribuzione uniforme dei quesiti Bebras ma anche creare delle categorie comprensibili da docenti di qualsiasi formazione affinché i quesiti possano diventare uno strumento didattico all'interno del curricolo scolastico.
-Con questo scopo nel Capitolo 3 verrà approfondito il tema del pensiero computazionale e come quest'ultimo possa rappresentare una chiave di lettura dei quesiti Bebras come risorsa didattica.
+Tra tutte le classificazioni esposte in questo paragrafo solo quella bidimensionale proposta da Dagiene \textit{et al.} \cite{DagieneINFORMATICA2017} nel 2017 introduce una novità nello scopo della classificazione: non si vuole solo ottenere una distribuzione uniforme dei quesiti Bebras ma anche creare delle categorie comprensibili da docenti di qualsiasi formazione affinché i quesiti possano diventare uno strumento didattico all'interno del curricolo scolastico.
+Con questo scopo nel capitolo \ref{cap3} verrà approfondito il tema del pensiero computazionale e come quest'ultimo possa rappresentare una chiave di lettura dei quesiti Bebras come risorsa didattica.
 %
 %
 %			CAPITOLO 2: Indicazioni nazionali e Bebras
@@ -360,7 +357,7 @@ L'informatica è intesa anche come \textit{tecnologia}, orientata a capire le ca
 Infine l'informatica è considerata uno \textit{strumento} per affrontare problemi che emergono in contesti diversi. Quest'ultimo è l'aspetto più diffuso in ambito scolastico dove vengono proposte iniziative tipicamente focalizzate su questo aspetto strumentale dell'informatica.
 
 
-L'introduzione dell'informatica nel sistema scolastico italiano ha inizio negli anni '80 con l’utilizzo dei primi personal computer nelle scuole. In quegli anni vengono sviluppate pionieristiche iniziative di avvio alla programmazione e uso delle tecnologie informatiche. Nell'anno scolastico 1986/87 nella secondaria di secondo grado si avviano i vari Piani Nazionali per l’Informatica che introducono basi di programmazione e linguaggi informatici come ausilio per l'apprendimento di discipline quali matematica e fisica, mentre nella scuola primaria si diffonde Logo, un linguaggio di programmazione ideato da Papert, come strumento didattico finalizzato alla manipolazione di concetti geometrici.
+L'introduzione dell'informatica nel sistema scolastico italiano ha inizio negli anni '80 con l’utilizzo dei primi personal computer nelle scuole. In quegli anni vengono sviluppate pionieristiche iniziative di avvio alla programmazione e uso delle tecnologie informatiche. Nell'anno scolastico 1986/87 nella secondaria di secondo grado si avviano i vari Piani Nazionali per l’informatica che introducono basi di programmazione e linguaggi informatici come ausilio per l'apprendimento di discipline quali matematica e fisica, mentre nella scuola primaria si diffonde Logo, un linguaggio di programmazione ideato da Papert, come strumento didattico finalizzato alla manipolazione di concetti geometrici.
 Successivamente, l'evoluzione di hardware e software ha reso sempre più facile l'interazione con i computer ed ha portato ad un conseguente cambiamento nel modo di concepire e usare la tecnologia digitale in ambito scolastico. Gradualmente si è passati da un interesse formativo centrato sull'applicazione di elementi e metodi propri dell'informatica nei programmi scolastici delle altre discipline ad un approccio volto allo sviluppo di metodi e pratiche basate sull'uso delle Tecnologie dell'Informazione e della Comunicazione (TIC) per migliorare e innovare i processi di insegnamento nei vari ambiti disciplinari. Comincia quindi a diffondersi prepotentemente l'accezione dell'informatica come uso delle applicazioni, in particolare attraverso i corsi organizzati nelle scuole riguardanti l'alfabetizzazione digitale e l'acquisizione di certificati come l'ECDL.
 
 
@@ -374,7 +371,7 @@ Per gli Istituti Professionali gli obiettivi previsti riguardano per lo più l'u
 Negli Istituti Tecnici del settore economico è prevista una materia denominata ``Informatica'' mentre in quelli del settore tecnologico ``Tecnologie informatiche''. In entrambi i casi i contenuti scelti sono orientati a formare una professionalità spendibile immediatamente nel mondo del lavoro.
 
 Per quanto riguarda il primo ciclo (scuola dell'infanzia, primaria e secondaria di primo grado) il documento di riferimento sono le ``Indicazioni nazionali per il curricolo della scuola dell'infanzia e del primo ciclo d'istruzione'' \cite{indicazioniNazionali}.
-Nella scuola primaria l'insegnamento dell'Informatica non ha delle ore dedicate: spesso vengono inserite alcune ore di laboratorio in cui si propone agli studenti l'informatica come uso del computer, quindi come strumento.
+Nella scuola primaria l'insegnamento dell'informatica non ha delle ore dedicate: spesso vengono inserite alcune ore di laboratorio in cui si propone agli studenti l'informatica come uso del computer, quindi come strumento.
 Nella scuola secondaria di primo grado la situazione non è molto diversa: nonostante ci siano dei riferimenti più espliciti all'informatica all'interno della materia ``Tecnologia'', nella pratica l'insegnamento di tale disciplina si focalizza sull'uso del computer.
 
 
@@ -460,9 +457,9 @@ I quesiti Bebras possono rappresentare una risorsa didattica per veicolare conte
 
 Si può notare come la forma dei giochi Bebras sia coerente con le indicazioni del Ministero.
 Nella parte introduttiva dell'area disciplinare di Matematica, ad esempio, si legge: ``\textit{Caratteristica della pratica matematica è la risoluzione di problemi, che devono essere intesi come questioni autentiche e significative, legate alla vita quotidiana, e non solo esercizi a carattere ripetitivo o quesiti ai quali si risponde semplicemente ricordando una definizione o una regola}''. I quesiti Bebras possiedono esattamente le caratteristiche riportate: si tratta spesso di problemi riconducibili a questioni significative legate alla vita quotidiana in cui la logica ricopre un ruolo fondamentale, non è mai richiesto di ricordare a memoria l’uso di definizioni o di regole ma tutte le informazioni necessarie a risolvere il problema dato sono contenute nel testo.
-Inoltre, come visto nel Capitolo 1, le gare Bebras in Italia vengono proposte come attività da svolgere in squadre per il raggiungimento della soluzione, così da far maturare la necessità di confronto e di discussione con i compagni. A tal proposito nelle Indicazioni si trova: ``\textit{Un’attenzione particolare andrà dedicata allo sviluppo della capacità di esporre e di discutere con i compagni le soluzioni e i procedimenti seguiti}''. 
+Inoltre, come visto nel capitolo \ref{cap1}, le gare Bebras in Italia vengono proposte come attività da svolgere in squadre per il raggiungimento della soluzione, così da far maturare la necessità di confronto e di discussione con i compagni. A tal proposito nelle Indicazioni si trova: ``\textit{Un’attenzione particolare andrà dedicata allo sviluppo della capacità di esporre e di discutere con i compagni le soluzioni e i procedimenti seguiti}''. 
 
-Oltre all'individuazione di questi riferimenti più generici, abbiamo fatto un lavoro sistematico di ricerca di corrispondenze tra i quesiti Bebras e le Indicazioni Nazionali: per ogni punto dei traguardi e degli obiettivi che abbiamo riconosciuto come affini all'Informatica è stato individuato almeno un quesito che possa avvicinare lo studente a contenuti e metodi informatici sotto forma di gioco.
+Oltre all'individuazione di questi riferimenti più generici, abbiamo fatto un lavoro sistematico di ricerca di corrispondenze tra i quesiti Bebras e le Indicazioni Nazionali: per ogni punto dei traguardi e degli obiettivi che abbiamo riconosciuto come affini all'informatica è stato individuato almeno un quesito che possa avvicinare lo studente a contenuti e metodi informatici sotto forma di gioco.
 
 Il risultato ottenuto da questa analisi è stato riportato in una tabella: le righe riportano i traguardi e gli obiettivi delle Indicazioni Nazionali affini all'informatica suddivisi per area didattica e grado scolastico, mentre le colonne riportano il titolo di alcuni quesiti Bebras in cui si è rilevato un nesso con almeno un'indicazione.
 Alcuni traguardi e obiettivi sono stati scomposti in più punti per rendere la corrispondenza più specifica.
@@ -533,7 +530,7 @@ Il quesito ``Palloncini'' (Figura \ref{fig:palloncini}) è stato ideato dal grup
 	\caption{``Braccialetti'' quesito Bebras dell'edizione italiana 2015 per la categoria KiloBebras}\label{fig:braccialetti}
 \end{figure}
 
-Il quesito ``Braccialetti'' (Figura \ref{fig:braccialetti}), proposto nel 2015 dal gruppo Bebras della Malesia, ideato per i bambini della scuola primaria, chiede di riconoscere quale delle quattro ipotesi proposte corrisponde all'ordine corretto degli oggetti. Nelle Indicazioni Nazionali, come già detto nella precedente sezione, si trovano diversi riferimenti all'acquisizione di questa abilità di riconoscimento di similitudini soprattutto nell'ambito matematico. Rispetto al quesito proposto, ad esempio, è evidente che ci sia un nesso con gli obiettivi dell'area disciplinare di Matematica ``\textit{Riconoscere figure ruotate, traslate e riflesse}'' e ``\textit{Riconoscere e descrivere regolarità in una sequenza di numeri o di figure}''. L'ordinamento delle perline, infatti, identifica uno schema che deve essere cercato in tutti i braccialetti: saper riconoscere schemi può aiutare a trovare delle similitudini tra cose che a prima vista sembrano diverse ma che invece hanno qualcosa in comune infatti, quando si realizza che un compito è simile ad un altro già affrontato precedentemente, è possibile applicare un metodo simile per svolgere il nuovo
+Il quesito ``Braccialetti'' (Figura \ref{fig:braccialetti}), proposto nel 2015 dal gruppo Bebras della Malesia, ideato per i bambini della scuola primaria, chiede di riconoscere quale delle quattro ipotesi proposte corrisponde all'ordine corretto degli oggetti. Nelle Indicazioni Nazionali, come già detto nel precedente paragrafo, si trovano diversi riferimenti all'acquisizione di questa abilità di riconoscimento di similitudini soprattutto nell'ambito matematico. Rispetto al quesito proposto, ad esempio, è evidente che ci sia un nesso con gli obiettivi dell'area disciplinare di Matematica ``\textit{Riconoscere figure ruotate, traslate e riflesse}'' e ``\textit{Riconoscere e descrivere regolarità in una sequenza di numeri o di figure}''. L'ordinamento delle perline, infatti, identifica uno schema che deve essere cercato in tutti i braccialetti: saper riconoscere schemi può aiutare a trovare delle similitudini tra cose che a prima vista sembrano diverse ma che invece hanno qualcosa in comune infatti, quando si realizza che un compito è simile ad un altro già affrontato precedentemente, è possibile applicare un metodo simile per svolgere il nuovo
 compito.
 
 \bigskip
@@ -604,7 +601,7 @@ Le competenze esposte sono sostenute ancora di più dalle seguenti attitudini \c
 %%%%%%%%%%%%%%
 \section{I quesiti Bebras descritti attraverso il pensiero computazionale} \label{ClassCT}
 % articolo prof
-I quesiti Bebras, come visto nel Capitolo 2, possono essere un ricco strumento per l'insegnamento curricolare dell'informatica e quindi, più in generale, per l'acquisizione del pensiero computazionale.
+I quesiti Bebras, come visto nel capitolo \ref{cap2}, possono essere un ricco strumento per l'insegnamento curricolare dell'informatica e quindi, più in generale, per l'acquisizione del pensiero computazionale.
 Per rendere esplicito il potenziale formativo dei quesiti Bebras anche a docenti privi di una formazione informatica, descriviamo le abilità del pensiero computazionale, menzionate nella definizione operazionale, facendo riferimento a quesiti Bebras che possono promuovere tali abilità \cite{LonatiISSEP2017}.
 
 \begin{itemize}
@@ -709,13 +706,13 @@ Per rendere esplicito il potenziale formativo dei quesiti Bebras anche a docenti
 
 %%%%%%%%%%
 \section{Riscontri degli insegnanti} \label{interviste}
-Descrivere i quesiti Bebras con riferimento alle abilità del pensiero computazionale (Sezione 2) ha lo scopo di evidenziare le potenzialità formative dei quesiti Bebras.
+Descrivere i quesiti Bebras con riferimento alle abilità del pensiero computazionale (paragrafo \ref{ClassCT}) ha lo scopo di evidenziare le potenzialità formative dei quesiti Bebras.
 Abbiamo intervistato alcuni docenti con la tecnica dei \textit{key informant} per verificare se le descrizioni proposte sono prima di tutto comprensibili anche a chi non ha una formazione specifica in informatica e in secondo luogo se aiutano a comprendere come e in quali contesti utilizzare i quesiti Bebras nel curricolo scolastico.
 
 
 La tecnica \textit{key informant} è una tecnica qualitativa che consiste nell'intervistare persone selezionate per la loro conoscenza approfondita dell'argomento di interesse. Le interviste si focalizzano su alcune tematiche specifiche che si vogliono affrontare, queste sono poco strutturate in modo da favorire un flusso libero di idee e informazioni, che successivamente vengono analizzate e rielaborate dagli intervistatori.
 Nel nostro caso gli intervistati sono stati otto insegnanti in scuole di vari gradi, selezionati per la loro competenza e pratica riflessiva sulla didattica. Quattro di loro conoscevano già le gare Bebras o perché avevano avuto a che fare con i quesiti tramite le gare annuali oppure per il loro contributo alla preparazione dei quesiti stessi; l'altra metà degli intervistati sono insegnanti senza formazione o esperienza specifica in informatica ma interessati alle questioni curricolari e metodologiche riguardanti l'insegnamento.
-A questi docenti abbiamo fornito una scheda, riportata di seguito, in cui si riporta una descrizione sintetica delle abilità del pensiero computazionale presentate nella Sezione \ref{ClassCT}; si chiede agli insegnanti di leggere attentamente le descrizioni e annotare eventuali dubbi o difficoltà di comprensione, in seguito si chiede di leggere alcuni quesiti Bebras, a loro scelta, disponibili sulla piattaforma di gara ed infine associare ognuno di essi ad una o più abilità descritte rispondendo alla domanda ``\textit{Usereste questo quesito per promuovere o insegnare questa capacità nell'ambito del pensiero computazionale?}''.
+A questi docenti abbiamo fornito una scheda, riportata di seguito, in cui si riporta una descrizione sintetica delle abilità del pensiero computazionale presentate nel paragrafo \ref{ClassCT}; si chiede agli insegnanti di leggere attentamente le descrizioni e annotare eventuali dubbi o difficoltà di comprensione, in seguito si chiede di leggere alcuni quesiti Bebras, a loro scelta, disponibili sulla piattaforma di gara ed infine associare ognuno di essi ad una o più abilità descritte rispondendo alla domanda ``\textit{Usereste questo quesito per promuovere o insegnare questa capacità nell'ambito del pensiero computazionale?}''.
 
 
 Nella stesura delle descrizioni riportate nella scheda abbiamo fatto particolare attenzione ad utilizzare un linguaggio meno tecnico possibile così da renderle comprensibili a tutti i docenti, indipendentemente dalla loro formazione.
@@ -782,7 +779,7 @@ Altre espressioni che sono state oggetto di incomprensioni sono quelle riguardan
 
 
 
-Abbiamo osservato che spesso venivano associati al pensiero algoritmico tutti i quesiti in cui è richiesto un pensiero genericamente analitico. Il processo di organizzare mentalmente la risoluzione di un problema per passi successivi uno conseguente all'altro veniva inteso come pensiero algoritmico nonostante non fossero coinvolti algoritmi o procedure da eseguire o regole formali. Ad esempio il quesito ``Braccialetti'', riportato nella Sezione 2.2 in Figura \ref{fig:braccialetti}, è stato collegato dagli insegnanti della scuola primaria al pensiero algoritmico: nel quesito vengono proposte quattro possibili soluzioni e il processo di analisi e confronto per il raggiungimento della soluzione è stato riferito all'uso di procedure passo-passo e la scomposizione del problema in sotto-problemi. Nella scuola primaria questo tipo di confusione potrebbe essere considerato accettabile, tuttavia per i ragazzi della secondaria deve essere ben distinto il pensiero analitico da quello algoritmico per poter apprezzare il vero valore del pensiero computazionale.
+Abbiamo osservato che spesso venivano associati al pensiero algoritmico tutti i quesiti in cui è richiesto un pensiero genericamente analitico. Il processo di organizzare mentalmente la risoluzione di un problema per passi successivi uno conseguente all'altro veniva inteso come pensiero algoritmico nonostante non fossero coinvolti algoritmi o procedure da eseguire o regole formali. Ad esempio il quesito ``Braccialetti'', riportato nella paragrafo \ref{indicazioni} in Figura \ref{fig:braccialetti}, è stato collegato dagli insegnanti della scuola primaria al pensiero algoritmico: nel quesito vengono proposte quattro possibili soluzioni e il processo di analisi e confronto per il raggiungimento della soluzione è stato riferito all'uso di procedure passo-passo e la scomposizione del problema in sotto-problemi. Nella scuola primaria questo tipo di confusione potrebbe essere considerato accettabile, tuttavia per i ragazzi della secondaria deve essere ben distinto il pensiero analitico da quello algoritmico per poter apprezzare il vero valore del pensiero computazionale.
 
 
 Per i docenti della primaria è stato piuttosto difficoltosa l'associazione dei quesiti con ``Identificare strategie risolutive'' e ``Analizzare soluzioni algoritmiche''. In effetti ai bambini si propongono di solito istanze specifiche di problemi e non classi di problemi nella loro generalità. Si chiede loro di trovare quindi la risposta a un'istanza specifica e non stabilire un metodo risolutivo generale. In altri termini, a quest'età si ragiona ad un livello di astrazione inferiore, e anche gli insegnanti, abituati a quei contesti, hanno poca familiarità con questo tipo di approccio. A conferma di questa interpretazione abbiamo verificato che i quesiti Bebras proposti nella categoria KiloBebras noi assoceremmo a queste abilità sono decisamente rari.
@@ -796,15 +793,14 @@ La lettura attraverso la lente delle abilità del pensiero computazionale sembra
 %%%%%%%%%%
 % CONCLUSIONI
 \chapter*{Conclusioni}
-\addcontentsline{toc}{chapter}{Conclusioni}
-In questa tesi è stato descritto il lavoro di analisi svolto sui quesiti Bebras mettendoli in corrispondenza con le Indicazioni Nazionali e con la classificazione basata sulla definizione operazionale di pensiero computazionale. \`{E} stato affrontato uno studio approfondito dei riferimenti ministeriali per le scuole del primo ciclo in cui si sono rilevati diversi punti relativi alla didattica dell'informatica come disciplina scientifica. Per ogni traguardo e obiettivo ministeriale con un ``sentore informatico'' si è cercato il relativo quesito Bebras che potesse essere utilizzato come strumento didattico per sviluppare l'abilità espressa. Dopo aver notato un'ottima percentuale di corrispondenze, è nata l'esigenza di rendere ancora più fruibili i quesiti Bebras come strumento didattico al di fuori delle gare annuali. Si è quindi sviluppata una classificazione basata sulla definizione operazionale di pensiero computazionale per evidenziare il potenziale valore educativo di ogni quesito.
-Sono quindi state svolte delle interviste ad alcuni docenti di varie scuole per verificare se la classificazione proposta fosse comprensibile anche a coloro che non hanno una formazione informatica, ed anche utile per una eventuale progettazione all'interno del curricolo scolastico.
-I docenti hanno mostrato interesse nell'uso dei quesiti all'interno della pratica scolastica, per questo motivo successivamente è stata creata un'applicazione web in cui poter ricercare i quesiti Bebras sia con la lente di lettura delle Indicazioni Nazionali che del pensiero computazionale. Inoltre per ogni quesito si può facilmente reperire la relativa soluzione e spiegazione.
 
-\`{E} stato ipotizzato un possibile ampliamento dell'applicazione web: la possibilità per i docenti di commentare i quesiti Bebras riportando le proprie esperienze didattiche 
-o anche annotare delle osservazioni che permettano agli organizzatori della gara Bebras di avere dei feedbacks puntuali sui quesiti specifici.
+In questo lavoro di tesi si è voluto rendere esplicito il potenziale didattico dei quesiti Bebras e favorire il loro utilizzo nella pratica scolastica anche a docenti con una formazione non informatica.
+Prima di tutto sono stati studiati i quesiti delle gare Bebras, il cui scopo è lo sviluppo del pensiero computazionale. 
+Successivamente è stata fatta un'analisi delle Indicazioni Nazionali per la scuola primaria e secondaria di primo grado, al fine di trovarvi tutti i riferimenti affini all'informatica, la quale non è prevista come disciplina curricolare.
+A partire dal risultato di questa analisi, sono stati presentati i quesiti Bebras attraverso i riferimenti trovati nelle Indicazioni Nazionali per evidenziare i contesti in cui utilizzarli come risorsa didattica.
+Per permettere l'utilizzo dei quesiti Bebras anche a docenti senza una formazione informatica, li abbiamo presentati in riferimento alle abilità del pensiero computazionale.
 
-
+Alla fine del lavoro si è potuto concludere che i quesiti Bebras sono un interessante strumento per l'insegnamento dell'informatica. Per rendere disponibile questa risorsa a tutti i docenti interessati abbiamo creato una piattaforma web contenente il risultato di questo lavoro di tesi, cioè la presentazione dei quesiti sia in riferimento alle Indicazioni Nazionali sia rispetto alle abilità del pensiero computazionale.
 %%%%%%%%%%%%%%
 \appendix
 
@@ -950,15 +946,15 @@ Quando possibile, gli alunni potranno essere introdotti ad alcuni linguaggi di p
 
 \chapter{Applicazione web per i quesiti Bebras} \label{Applicazione} 
 % per la consultazione dei quesiti Bebras
-I quesiti Bebras, come visto nel Capitolo 3, possono essere un interessante strumento per l'insegnamento curricolare dell'informatica e per l'acquisizione del pensiero computazionale. Per rendere questa risorsa disponibile a tutti i docenti interessati, abbiamo creato una piattaforma web che raccoglie tutti i quesiti disponibili.
+I quesiti Bebras, come visto nel capitolo \ref{cap3}, possono essere un interessante strumento per l'insegnamento curricolare dell'informatica e per familiarizzare con il pensiero computazionale. Per rendere questa risorsa disponibile a tutti i docenti interessati, abbiamo creato una piattaforma web che raccoglie tutti i quesiti disponibili.
 Attualmente i quesiti delle edizioni italiane sono già a disposizione, sotto forma di esercitazione, sulla piattaforma di gara \cite{PiattaformaBebras} ma essa risulta difficile da consultare per la ricerca di un singolo quesito o di uno specifico argomento.
-Abbiamo quindi ritenuto opportuno offrire la possibilità di ricercare un dato quesito sia attraverso la lente di lettura delle Indicazioni Nazionali presentate nel Capitolo 2, sia tramite le abilità del pensiero computazionale esposte nel Capitolo 3.
+Abbiamo quindi ritenuto opportuno offrire la possibilità di ricercare un dato quesito sia attraverso la lente di lettura delle Indicazioni Nazionali presentate nel capitolo \ref{cap2}, sia tramite le abilità del pensiero computazionale esposte nel capitolo \ref{cap3}.
 \section{Tecnologie utilizzate}
 
 \subsection{MongoDB}
-MongoDB \cite{mongoDB}è un DBMS open-source orientato ai documenti. Rientra nella categoria dei DBMS NoSQL infatti, anzichè utilizzare una struttura basata su tabelle come i database relazionali, MongoDB memorizza i dati in documenti JSON-like con schema dinamico (formato che prende il nome di BSON). Questa strategia mira ad avere migliori prestazioni rispetto ai RDBMS tradizionali, una disponibilità dei dati più elevata e una scalabilità orizzontale su cluster che viene automatizzata grazie a un sistema chiamato sharding. I dati vengono organizzati in record chiamati documenti, ovvero strutture dati composte da coppie campo-valore. I valori associati ai campi possono contenere a loro volta altri documenti, array o array di documenti.
-Questo annidamento di documenti e array consente di diminuire il numero di oggetti archiviati e di ovviare all'impossibilità di effettuare operazioni di join su documenti memorizzati in modo distribuito. Anziché usare tabelle, infatti, i documenti vengono organizzati in collezioni, tra le quali non è possibile effettuare operazioni di join in modo diretto. La robustezza del sistema viene incrementata da un sistema di ridondanza automatizzato. MongoDB presenta comunque degli svantaggi, infatti il suo sistema di indicizzazione dei dati determina un uso massiccio della memoria, e in quanto a spazio su disco, mediamente comporta un'occupazione maggiore rispetto ai DBMS relazionali.
-
+MongoDB \cite{mongoDB}è un Database Management System open-source orientato ai documenti. Rientra nella categoria dei DBMS NoSQL infatti, anzichè utilizzare una struttura basata su tabelle come i database relazionali, MongoDB memorizza i dati in documenti con schema variabile (formato che prende il nome di Binary JSON). 
+I dati vengono organizzati in record chiamati documenti, ovvero strutture dati composte da coppie campo-valore. I valori associati ai campi possono contenere a loro volta altri documenti, array o array di documenti.
+Questo annidamento di documenti e array consente di diminuire il numero di oggetti archiviati e di ovviare all'impossibilità di effettuare operazioni di join su documenti memorizzati in modo distribuito. Anziché usare tabelle, infatti, i documenti vengono organizzati in collezioni, tra le quali non è possibile effettuare operazioni di join in modo diretto. La robustezza del sistema viene incrementata da un sistema di ridondanza automatizzato. 
 In particolare per lo sviluppo di questa applicazione web viene utilizzata la piattaforma mLab \cite{mLab}: un servizio di database cloud che ospita database MongoDB.
 
 
@@ -974,10 +970,10 @@ Jinja2 è un motore di template per il linguaggio Python.
 L’aggettivo che descrive meglio Flask, a detta degli stessi sviluppatori, è “micro”, con il quale non si intende tracciare i limiti del framework bensì il suo essere essenziale. Nonostante sia decisamente snello, offre una vasta serie di estensioni che consentono di personalizzarne le funzionalità secondo le proprie esigenze.
 
 \section{Descrizione delle funzionalità}
-In questa sezione saranno presentate le funzionalità dell'applicazione sviluppata attraverso i casi d'uso più significativi.
+In questo paragrafo saranno presentate le funzionalità dell'applicazione sviluppata attraverso i casi d'uso più significativi.
 
 
-Nella homepage (Figura \ref{App_homepage}) l'utente può scegliere se visionare l'intero elenco dei quesiti Bebras disponibili oppure cercare uno o più quesiti in relazione alle Indicazioni Nazionali o in base alle abilità del pensiero computazionale.
+Nella pagina iniziale (Figura \ref{App_homepage}) l'utente può scegliere se visionare l'intero elenco dei quesiti Bebras disponibili oppure cercare uno o più quesiti in relazione alle Indicazioni Nazionali o in base alle abilità del pensiero computazionale.
 
 
 Nella sezione ``Elenco quesiti'' vengono visualizzati tutti i quesiti italiani Bebras in un elenco (Figura  \ref{App_elencoQuesiti}) su cui si possono applicare i filtri di ricerca per \textit{Anno} e/o \textit{Categoria}, oppure cercare un dato quesito attraverso il suo titolo.
@@ -993,18 +989,18 @@ Selezionando il quesito d'interesse si ottiene il suo dettaglio (Figura \ref{App
 
 Nella sezione ``Indicazioni nazionali'' (Figura \ref{indicazioniNazionali}) vengono proposti i traguardi e gli obiettivi affini all'informatica (Appendice \ref{ElencoIndicazioni}) estratti dal documento del Ministero \cite{indicazioniNazionali}. In questa sezione il docente può scegliere la materia, il grado scolastico e il traguardo o obiettivo di interesse ed ottenere i relativi quesiti Bebras.
 
-Nella sezione ``Pensiero computazionale'' (Figura \ref{App_CT}) sono riportate le descrizioni delle abilità del pensiero computazionale che sono state esposte nella Sezione \ref{interviste}. Per ogni abilità presentata il docente può reperire l'elenco dei quesiti Bebras che la promuovono.
+Nella sezione ``Pensiero computazionale'' (Figura \ref{App_CT}) sono riportate le descrizioni delle abilità del pensiero computazionale che sono state esposte nel paragrafo \ref{interviste}. Per ogni abilità presentata il docente può reperire l'elenco dei quesiti Bebras che la promuovono.
 
 \begin{figure}[H]
 	\centering
 	\fbox{\includegraphics[width=14.8cm]{./immagini/Appendice/App_homepage}}
-	\caption{Homepage dell'applicazione web}
+	\caption{Pagina iniziale dell'applicazione web}
 	\label{App_homepage}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[width=14.8cm]{./immagini/Appendice/App_elencoQuesiti}}
+	\fbox{\includegraphics[width=14cm]{./immagini/Appendice/App_elencoQuesiti}}
 	\caption{Elenco quesiti Bebras}
 	\label{App_elencoQuesiti}
 \end{figure}
@@ -1019,14 +1015,14 @@ Nella sezione ``Pensiero computazionale'' (Figura \ref{App_CT}) sono riportate l
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[width=12cm]{./immagini/Appendice/02_SitoIndicazioni}} \label{indicazioniNazionali}
+	\fbox{\includegraphics[width=13.6cm]{./immagini/Appendice/02_SitoIndicazioni}} \label{indicazioniNazionali}
 	\caption{Elenco delle Indicazioni Nazionali affini all'informatica}
 \end{figure}
 
 
 \begin{figure}[H]
 	\centering
-	\fbox{\includegraphics[width=15.0cm]{./immagini/Appendice/App_CT}}
+	\fbox{\includegraphics[width=13.6cm]{./immagini/Appendice/App_CT}}
 	\caption{Elenco delle abilità del pensiero computazionale}
 	\label{App_CT}
 \end{figure}

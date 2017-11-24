@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.10)  24 NOV 2017 03:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.10)  24 NOV 2017 17:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -766,7 +766,7 @@ LaTeX Info: Redefining \nameref on input line 34.
 LaTeX Info: Redefining \it@ocap on input line 34.
 LaTeX Info: Redefining \it@ccap on input line 34.
 
-<logo_unimi.png, id=80, 1204.5pt x 1204.5pt>
+<logo_unimi.png, id=76, 1204.5pt x 1204.5pt>
 File: logo_unimi.png Graphic file (type png)
  <use logo_unimi.png>
 Package pdftex.def Info: logo_unimi.png used on input line 36.
@@ -790,122 +790,118 @@ unimi.png>]
 
  [2
 
-]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 69.
+] [1
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 69.
- [1
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 79--85
-
- []
-
-[2] [3]
+] [2] [3]
 Capitolo 1.
 [4
 
-] [5] [6] [7]
-<"./immagini/01_Cap1/2016-HU-02Testo".jpeg, id=159, 1090.0725pt x 747.79375pt>
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 107.
+
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 107.
+ [5] [6]
+[7]
+<"./immagini/01_Cap1/2016-HU-02Testo".jpeg, id=154, 1090.0725pt x 747.79375pt>
 File: "./immagini/01_Cap1/2016-HU-02Testo".jpeg Graphic file (type jpg)
 
 <use "./immagini/01_Cap1/2016-HU-02Testo".jpeg>
 Package pdftex.def Info: "./immagini/01_Cap1/2016-HU-02Testo".jpeg used on inpu
-t line 144.
+t line 141.
 (pdftex.def)             Requested size: 414.76411pt x 284.52756pt.
 
-<./immagini/01_Cap1/2016-CH-03Testo.jpeg, id=161, 1128.215pt x 784.9325pt>
+<./immagini/01_Cap1/2016-CH-03Testo.jpeg, id=156, 1128.215pt x 784.9325pt>
 File: ./immagini/01_Cap1/2016-CH-03Testo.jpeg Graphic file (type jpg)
 
 <use ./immagini/01_Cap1/2016-CH-03Testo.jpeg>
 Package pdftex.def Info: ./immagini/01_Cap1/2016-CH-03Testo.jpeg used on input 
-line 153.
+line 150.
 (pdftex.def)             Requested size: 408.96317pt x 284.52756pt.
  [8pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.155 \end{figure}
+l.152 \end{figure}
                    <./immagini/01_Cap1/2016-HU-02Testo.jpeg>] [9pdfTeX warning 
 (ext4): destination with the same identifier (name{figure.1.2}) has been alread
 y used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.161 
+l.158 
        <./immagini/01_Cap1/2016-CH-03Testo.jpeg>] [10] [11] [12] [13]
-<./immagini/01_Cap1/ClassificazionePohl_01.jpeg, id=217, 1599.9775pt x 614.295p
+<./immagini/01_Cap1/ClassificazionePohl_01.jpeg, id=213, 1599.9775pt x 614.295p
 t>
 File: ./immagini/01_Cap1/ClassificazionePohl_01.jpeg Graphic file (type jpg)
  <use ./immagini/01_Cap1/ClassificazionePohl_01.jpeg>
 Package pdftex.def Info: ./immagini/01_Cap1/ClassificazionePohl_01.jpeg used on
- input line 213.
+ input line 210.
 (pdftex.def)             Requested size: 426.79134pt x 163.85596pt.
 
-<./immagini/01_Cap1/ClassificazionePohl_02.jpeg, id=219, 1728.4575pt x 620.3175
+<./immagini/01_Cap1/ClassificazionePohl_02.jpeg, id=215, 1728.4575pt x 620.3175
 pt>
 File: ./immagini/01_Cap1/ClassificazionePohl_02.jpeg Graphic file (type jpg)
  <use ./immagini/01_Cap1/ClassificazionePohl_02.jpeg>
 Package pdftex.def Info: ./immagini/01_Cap1/ClassificazionePohl_02.jpeg used on
- input line 219.
+ input line 216.
 (pdftex.def)             Requested size: 426.79134pt x 153.167pt.
  [14pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.222 
+l.219 
        <./immagini/01_Cap1/ClassificazionePohl_01.jpeg>]
-<./immagini/01_Cap1/ClassificazionePohl_03.jpeg, id=226, 1712.3975pt x 867.24pt
+<./immagini/01_Cap1/ClassificazionePohl_03.jpeg, id=222, 1712.3975pt x 867.24pt
 >
 File: ./immagini/01_Cap1/ClassificazionePohl_03.jpeg Graphic file (type jpg)
  <use ./immagini/01_Cap1/ClassificazionePohl_03.jpeg>
 Package pdftex.def Info: ./immagini/01_Cap1/ClassificazionePohl_03.jpeg used on
- input line 225.
+ input line 222.
 (pdftex.def)             Requested size: 426.79134pt x 216.14781pt.
 
-<./immagini/01_Cap1/ClassificazionePohl_04.jpeg, id=228, 1664.2175pt x 1009.772
+<./immagini/01_Cap1/ClassificazionePohl_04.jpeg, id=224, 1664.2175pt x 1009.772
 5pt>
 File: ./immagini/01_Cap1/ClassificazionePohl_04.jpeg Graphic file (type jpg)
  <use ./immagini/01_Cap1/ClassificazionePohl_04.jpeg>
 Package pdftex.def Info: ./immagini/01_Cap1/ClassificazionePohl_04.jpeg used on
- input line 231.
+ input line 228.
 (pdftex.def)             Requested size: 426.79134pt x 258.96002pt.
  [15pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.234 
+l.231 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 1.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.234 
+l.231 
        <./immagini/01_Cap1/ClassificazionePohl_02.jpeg> <./immagini/01_Cap1/Cla
 ssificazionePohl_03.jpeg>] [16pdfTeX warning (ext4): destination with the same 
 identifier (name{figure.1.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.247 	\item P
+l.244 	\item P
               rocessi informatici e hardware <./immagini/01_Cap1/Classificazion
 ePohl_04.jpeg>]
-<./immagini/01_Cap1/informaticContentDagiene.jpeg, id=245, 1292.83pt x 899.36pt
+<./immagini/01_Cap1/informaticContentDagiene.jpeg, id=241, 1292.83pt x 899.36pt
 >
 File: ./immagini/01_Cap1/informaticContentDagiene.jpeg Graphic file (type jpg)
  <use ./immagini/01_Cap1/informaticContentDagiene.jpeg>
 Package pdftex.def Info: ./immagini/01_Cap1/informaticContentDagiene.jpeg used 
-on input line 258.
+on input line 255.
 (pdftex.def)             Requested size: 462.18323pt x 321.51622pt.
 
-Overfull \hbox (28.56323pt too wide) in paragraph at lines 258--259
+Overfull \hbox (28.56323pt too wide) in paragraph at lines 255--256
  [][] 
  []
 
@@ -914,31 +910,31 @@ Overfull \hbox (28.56323pt too wide) in paragraph at lines 258--259
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.264 	\item
+l.261 	\item
              Astrazione; <./immagini/01_Cap1/informaticContentDagiene.jpeg>]
-<./immagini/01_Cap1/CTDagiene.jpeg, id=258, 1300.86pt x 700.6175pt>
+<./immagini/01_Cap1/CTDagiene.jpeg, id=254, 1300.86pt x 700.6175pt>
 File: ./immagini/01_Cap1/CTDagiene.jpeg Graphic file (type jpg)
 
 <use ./immagini/01_Cap1/CTDagiene.jpeg>
 Package pdftex.def Info: ./immagini/01_Cap1/CTDagiene.jpeg used on input line 2
-77.
+74.
 (pdftex.def)             Requested size: 475.47491pt x 256.0748pt.
 
-Overfull \hbox (41.85492pt too wide) in paragraph at lines 277--278
+Overfull \hbox (41.85492pt too wide) in paragraph at lines 274--275
  [][] 
  []
 
 [18]
-<./immagini/01_Cap1/two-dimensional_classification.jpeg, id=271, 1591.9475pt x 
+<./immagini/01_Cap1/two-dimensional_classification.jpeg, id=267, 1591.9475pt x 
 279.0425pt>
 File: ./immagini/01_Cap1/two-dimensional_classification.jpeg Graphic file (type
  jpg)
  <use ./immagini/01_Cap1/two-dimensional_classification.jpeg>
 Package pdftex.def Info: ./immagini/01_Cap1/two-dimensional_classification.jpeg
- used on input line 284.
+ used on input line 281.
 (pdftex.def)             Requested size: 438.26059pt x 76.82234pt.
 
-Overfull \hbox (4.6406pt too wide) in paragraph at lines 284--285
+Overfull \hbox (4.6406pt too wide) in paragraph at lines 281--282
  [][] 
  []
 
@@ -947,55 +943,55 @@ Overfull \hbox (4.6406pt too wide) in paragraph at lines 284--285
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.289 
+l.286 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 1.9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.289 
+l.286 
        <./immagini/01_Cap1/CTDagiene.jpeg> <./immagini/01_Cap1/two-dimensional_
 classification.jpeg>] [20]
-<./immagini/01_Cap1/TassonomiaBloom.png, id=289, 315.1775pt x 274.02374pt>
+<./immagini/01_Cap1/TassonomiaBloom.png, id=285, 315.1775pt x 274.02374pt>
 File: ./immagini/01_Cap1/TassonomiaBloom.png Graphic file (type png)
 
 <use ./immagini/01_Cap1/TassonomiaBloom.png>
 Package pdftex.def Info: ./immagini/01_Cap1/TassonomiaBloom.png used on input l
-ine 304.
+ine 301.
 (pdftex.def)             Requested size: 176.72423pt x 153.6447pt.
  [21pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
 10}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.322 		\item a
+l.319 		\item a
                pplicare regole generative o metodi ad uno stato iniziale, a ...
  <./immagini/01_Cap1/TassonomiaBloom.png>] [22] [23]
 Capitolo 2.
 [24
 
 ] [25] [26] [27] [28] [29] [30] [31] [32] [33] [34]
-<./immagini/02_Cap2/TabellaMatchIndicazioniMate.jpg, id=365, 1096.095pt x 1362.
+<./immagini/02_Cap2/TabellaMatchIndicazioniMate.jpg, id=363, 1096.095pt x 1362.
 08875pt>
 File: ./immagini/02_Cap2/TabellaMatchIndicazioniMate.jpg Graphic file (type jpg
 )
  <use ./immagini/02_Cap2/TabellaMatchIndicazioniMate.jpg>
 Package pdftex.def Info: ./immagini/02_Cap2/TabellaMatchIndicazioniMate.jpg use
-d on input line 477.
+d on input line 474.
 (pdftex.def)             Requested size: 426.79134pt x 530.36035pt.
  [35]
-<./immagini/02_Cap2/MatchObiettiviMate.jpg, id=371, 906.38625pt x 1440.38126pt>
+<./immagini/02_Cap2/MatchObiettiviMate.jpg, id=369, 906.38625pt x 1440.38126pt>
 File: ./immagini/02_Cap2/MatchObiettiviMate.jpg Graphic file (type jpg)
 <use ./immagini/02_Cap2/MatchObiettiviMate.jpg>
 Package pdftex.def Info: ./immagini/02_Cap2/MatchObiettiviMate.jpg used on inpu
-t line 483.
+t line 480.
 (pdftex.def)             Requested size: 369.88582pt x 587.79086pt.
  [36pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.486 
+l.483 
        <./immagini/02_Cap2/TabellaMatchIndicazioniMate.jpg>]
 Overfull \vbox (43.73619pt too high) has occurred while \output is active []
 
@@ -1005,54 +1001,54 @@ Overfull \vbox (43.73619pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.486 
+l.483 
        <./immagini/02_Cap2/MatchObiettiviMate.jpg>]
-<./immagini/02_Cap2/corrispondenze1.jpeg, id=384, 875.27pt x 594.22pt>
+<./immagini/02_Cap2/corrispondenze1.jpeg, id=382, 875.27pt x 594.22pt>
 File: ./immagini/02_Cap2/corrispondenze1.jpeg Graphic file (type jpg)
 
 <use ./immagini/02_Cap2/corrispondenze1.jpeg>
 Package pdftex.def Info: ./immagini/02_Cap2/corrispondenze1.jpeg used on input 
-line 497.
+line 494.
 (pdftex.def)             Requested size: 426.79134pt x 289.74683pt.
  [38]
-<./immagini/02_Cap2/corrispondenze2.jpeg, id=391, 748.7975pt x 198.7425pt>
+<./immagini/02_Cap2/corrispondenze2.jpeg, id=389, 748.7975pt x 198.7425pt>
 File: ./immagini/02_Cap2/corrispondenze2.jpeg Graphic file (type jpg)
 
 <use ./immagini/02_Cap2/corrispondenze2.jpeg>
 Package pdftex.def Info: ./immagini/02_Cap2/corrispondenze2.jpeg used on input 
-line 503.
+line 500.
 (pdftex.def)             Requested size: 426.79134pt x 113.27832pt.
  [39pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.511 
+l.508 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 2.14}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.511 
+l.508 
        <./immagini/02_Cap2/corrispondenze1.jpeg> <./immagini/02_Cap2/corrispond
 enze2.jpeg>]
-<./immagini/02_Cap2/palloncini.jpg, id=396, 1005.7575pt x 647.41875pt>
+<./immagini/02_Cap2/palloncini.jpg, id=394, 1005.7575pt x 647.41875pt>
 File: ./immagini/02_Cap2/palloncini.jpg Graphic file (type jpg)
 
 <use ./immagini/02_Cap2/palloncini.jpg>
 Package pdftex.def Info: ./immagini/02_Cap2/palloncini.jpg used on input line 5
-21.
+18.
 (pdftex.def)             Requested size: 426.79134pt x 274.72948pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[40] <./immagini/02_Cap2/braccialetti.jpg, id=403, 1005.7575pt x 697.60625pt>
+[40] <./immagini/02_Cap2/braccialetti.jpg, id=401, 1005.7575pt x 697.60625pt>
 File: ./immagini/02_Cap2/braccialetti.jpg Graphic file (type jpg)
 
 <use ./immagini/02_Cap2/braccialetti.jpg>
 Package pdftex.def Info: ./immagini/02_Cap2/braccialetti.jpg used on input line
- 532.
+ 529.
 (pdftex.def)             Requested size: 426.79134pt x 296.02634pt.
 
 
@@ -1063,35 +1059,35 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.538 
+l.535 
        <./immagini/02_Cap2/palloncini.jpg>] [42pdfTeX warning (ext4): destinati
 on with the same identifier (name{figure.2.16}) has been already used, duplicat
 e ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.540 
+l.537 
        <./immagini/02_Cap2/braccialetti.jpg>]
-<./immagini/02_Cap2/tartaruga.jpg, id=415, 1182.4175pt x 819.06pt>
+<./immagini/02_Cap2/tartaruga.jpg, id=413, 1182.4175pt x 819.06pt>
 File: ./immagini/02_Cap2/tartaruga.jpg Graphic file (type jpg)
 
 <use ./immagini/02_Cap2/tartaruga.jpg>
 Package pdftex.def Info: ./immagini/02_Cap2/tartaruga.jpg used on input line 54
-3.
+0.
 (pdftex.def)             Requested size: 426.79134pt x 295.63623pt.
  [43pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 17}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.549 
+l.546 
        <./immagini/02_Cap2/tartaruga.jpg>]
-<./immagini/02_Cap2/direzioni.jpg, id=422, 1176.395pt x 784.9325pt>
+<./immagini/02_Cap2/direzioni.jpg, id=420, 1176.395pt x 784.9325pt>
 File: ./immagini/02_Cap2/direzioni.jpg Graphic file (type jpg)
 
 <use ./immagini/02_Cap2/direzioni.jpg>
 Package pdftex.def Info: ./immagini/02_Cap2/direzioni.jpg used on input line 55
-4.
+1.
 (pdftex.def)             Requested size: 426.79134pt x 284.76729pt.
 
 
@@ -1102,49 +1098,49 @@ e.2.18}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.564 \chapter
+l.561 \chapter
               {Il computational thinking e i quesiti Bebras} <./immagini/02_Cap
 2/direzioni.jpg>]
 Capitolo 3.
 [46
 
 ] [47] [48] [49]
-<./immagini/03_Cap3/agenzia_viaggio.jpg, id=470, 1105.12875pt x 747.79375pt>
+<./immagini/03_Cap3/agenzia_viaggio.jpg, id=469, 1105.12875pt x 747.79375pt>
 File: ./immagini/03_Cap3/agenzia_viaggio.jpg Graphic file (type jpg)
 
 <use ./immagini/03_Cap3/agenzia_viaggio.jpg>
 Package pdftex.def Info: ./immagini/03_Cap3/agenzia_viaggio.jpg used on input l
-ine 624.
+ine 621.
 (pdftex.def)             Requested size: 426.79134pt x 288.78578pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./immagini/03_Cap3/2015-CZ-01Testo.jpeg, id=472, 1005.7575pt x 686.565pt>
+<./immagini/03_Cap3/2015-CZ-01Testo.jpeg, id=471, 1005.7575pt x 686.565pt>
 File: ./immagini/03_Cap3/2015-CZ-01Testo.jpeg Graphic file (type jpg)
 
 <use ./immagini/03_Cap3/2015-CZ-01Testo.jpeg>
 Package pdftex.def Info: ./immagini/03_Cap3/2015-CZ-01Testo.jpeg used on input 
-line 637.
+line 634.
 (pdftex.def)             Requested size: 426.79134pt x 291.34103pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [50]
-<./immagini/03_Cap3/2015-CA-01Testo.jpeg, id=480, 1005.7575pt x 649.42625pt>
+<./immagini/03_Cap3/2015-CA-01Testo.jpeg, id=479, 1005.7575pt x 649.42625pt>
 File: ./immagini/03_Cap3/2015-CA-01Testo.jpeg Graphic file (type jpg)
 
 <use ./immagini/03_Cap3/2015-CA-01Testo.jpeg>
 Package pdftex.def Info: ./immagini/03_Cap3/2015-CA-01Testo.jpeg used on input 
-line 649.
+line 646.
 (pdftex.def)             Requested size: 426.79134pt x 275.58134pt.
  [51pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 19}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.651 	\end{figure}
+l.648 	\end{figure}
                     <./immagini/03_Cap3/agenzia_viaggio.jpg>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1154,47 +1150,47 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.661 
+l.658 
        <./immagini/03_Cap3/2015-CZ-01Testo.jpeg>] [53pdfTeX warning (ext4): des
 tination with the same identifier (name{figure.3.21}) has been already used, du
 plicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.661 
+l.658 
        <./immagini/03_Cap3/2015-CA-01Testo.jpeg>]
-<./immagini/03_Cap3/labirinti.jpg, id=497, 1116.17pt x 787.94376pt>
+<./immagini/03_Cap3/labirinti.jpg, id=496, 1116.17pt x 787.94376pt>
 File: ./immagini/03_Cap3/labirinti.jpg Graphic file (type jpg)
 
 <use ./immagini/03_Cap3/labirinti.jpg>
 Package pdftex.def Info: ./immagini/03_Cap3/labirinti.jpg used on input line 66
-4.
+1.
 (pdftex.def)             Requested size: 426.79134pt x 301.28531pt.
  [54pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 22}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.674 
+l.671 
        <./immagini/03_Cap3/labirinti.jpg>]
-<./immagini/03_Cap3/2016-BE-02Testo.jpeg, id=503, 1156.32pt x 784.9325pt>
+<./immagini/03_Cap3/2016-BE-02Testo.jpeg, id=502, 1156.32pt x 784.9325pt>
 File: ./immagini/03_Cap3/2016-BE-02Testo.jpeg Graphic file (type jpg)
 
 <use ./immagini/03_Cap3/2016-BE-02Testo.jpeg>
 Package pdftex.def Info: ./immagini/03_Cap3/2016-BE-02Testo.jpeg used on input 
-line 677.
+line 674.
 (pdftex.def)             Requested size: 426.79134pt x 289.71382pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<./immagini/03_Cap3/artiglieria_programmabile.jpg, id=505, 1200.485pt x 784.932
+<./immagini/03_Cap3/artiglieria_programmabile.jpg, id=504, 1200.485pt x 784.932
 5pt>
 File: ./immagini/03_Cap3/artiglieria_programmabile.jpg Graphic file (type jpg)
  <use ./immagini/03_Cap3/artiglieria_programmabile.jpg>
 Package pdftex.def Info: ./immagini/03_Cap3/artiglieria_programmabile.jpg used 
-on input line 690.
+on input line 687.
 (pdftex.def)             Requested size: 426.79134pt x 279.05421pt.
  [55]
 Overfull \vbox (117.84612pt too high) has occurred while \output is active []
@@ -1205,33 +1201,33 @@ Overfull \vbox (117.84612pt too high) has occurred while \output is active []
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.693 
+l.690 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 3.24}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.693 
+l.690 
        <./immagini/03_Cap3/2016-BE-02Testo.jpeg> <./immagini/03_Cap3/artiglieri
 a_programmabile.jpg>]
-<./immagini/03_Cap3/robot.jpg, id=517, 1074.0125pt x 672.5125pt>
+<./immagini/03_Cap3/robot.jpg, id=516, 1074.0125pt x 672.5125pt>
 File: ./immagini/03_Cap3/robot.jpg Graphic file (type jpg)
 
 <use ./immagini/03_Cap3/robot.jpg>
-Package pdftex.def Info: ./immagini/03_Cap3/robot.jpg used on input line 704.
+Package pdftex.def Info: ./immagini/03_Cap3/robot.jpg used on input line 701.
 (pdftex.def)             Requested size: 426.79134pt x 267.24548pt.
  [57pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 25}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.714 
+l.711 
        <./immagini/03_Cap3/robot.jpg>] [58]
 <./immagini/03_Cap3/scheda1.jpg, id=528, 1133.23375pt x 951.555pt>
 File: ./immagini/03_Cap3/scheda1.jpg Graphic file (type jpg)
 
 <use ./immagini/03_Cap3/scheda1.jpg>
-Package pdftex.def Info: ./immagini/03_Cap3/scheda1.jpg used on input line 727.
+Package pdftex.def Info: ./immagini/03_Cap3/scheda1.jpg used on input line 724.
 
 (pdftex.def)             Requested size: 421.10086pt x 353.57986pt.
 
@@ -1239,7 +1235,7 @@ Package pdftex.def Info: ./immagini/03_Cap3/scheda1.jpg used on input line 727.
 File: ./immagini/03_Cap3/scheda2.jpg Graphic file (type jpg)
 
 <use ./immagini/03_Cap3/scheda2.jpg>
-Package pdftex.def Info: ./immagini/03_Cap3/scheda2.jpg used on input line 733.
+Package pdftex.def Info: ./immagini/03_Cap3/scheda2.jpg used on input line 730.
 
 (pdftex.def)             Requested size: 421.10086pt x 392.37012pt.
  [59pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
@@ -1247,14 +1243,14 @@ Package pdftex.def Info: ./immagini/03_Cap3/scheda2.jpg used on input line 733.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.736 
+l.733 
        <./immagini/03_Cap3/scheda1.jpg>] [60pdfTeX warning (ext4): destination 
 with the same identifier (name{figure.3.27}) has been already used, duplicate i
 gnored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.743 
+l.740 
        <./immagini/03_Cap3/scheda2.jpg>]
 <./immagini/03_Cap3/classificazione_insegnanti.jpg, id=545, 1073.00874pt x 1244
 .65pt>
@@ -1262,7 +1258,7 @@ File: ./immagini/03_Cap3/classificazione_insegnanti.jpg Graphic file (type jpg)
 
  <use ./immagini/03_Cap3/classificazione_insegnanti.jpg>
 Package pdftex.def Info: ./immagini/03_Cap3/classificazione_insegnanti.jpg used
- on input line 757.
+ on input line 754.
 (pdftex.def)             Requested size: 426.79134pt x 495.05939pt.
 
 <./immagini/03_Cap3/rielaborazioneCT.jpg, id=546, 1171.37625pt x 1704.3675pt>
@@ -1270,210 +1266,211 @@ File: ./immagini/03_Cap3/rielaborazioneCT.jpg Graphic file (type jpg)
 
 <use ./immagini/03_Cap3/rielaborazioneCT.jpg>
 Package pdftex.def Info: ./immagini/03_Cap3/rielaborazioneCT.jpg used on input 
-line 763.
+line 760.
 (pdftex.def)             Requested size: 426.79134pt x 620.98369pt.
 
 
-LaTeX Warning: Float too large for page by 95.49551pt on input line 765.
+LaTeX Warning: Float too large for page by 95.49551pt on input line 762.
 
 [61] [62] [63] [64] [65pdfTeX warning (ext4): destination with the same identif
 ier (name{figure.3.28}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.798 \chapter
+l.795 \chapter
               *{Conclusioni} <./immagini/03_Cap3/classificazione_insegnanti.jpg
 >] [66pdfTeX warning (ext4): destination with the same identifier (name{figure.
 3.29}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.798 \chapter
+l.795 \chapter
               *{Conclusioni} <./immagini/03_Cap3/rielaborazioneCT.jpg>]
 [67
 
-] [68]
+]
 Appendice A.
-[69
+[68
 
-] [70] [71] [72] [73] [74] [75]
+] [69] [70] [71] [72] [73] [74]
 Appendice B.
-[76
+[75
 
-] [77] [78]
-<./immagini/Appendice/App_homepage.jpeg, id=644, 1339.0025pt x 622.325pt>
+] [76] [77]
+<./immagini/Appendice/App_homepage.jpeg, id=647, 1339.0025pt x 622.325pt>
 File: ./immagini/Appendice/App_homepage.jpeg Graphic file (type jpg)
 
 <use ./immagini/Appendice/App_homepage.jpeg>
 Package pdftex.def Info: ./immagini/Appendice/App_homepage.jpeg used on input l
-ine 1000.
+ine 996.
 (pdftex.def)             Requested size: 421.10086pt x 195.71054pt.
- [79]
-<./immagini/Appendice/App_elencoQuesiti.jpeg, id=652, 1339.0025pt x 883.3pt>
+
+<./immagini/Appendice/App_elencoQuesiti.jpeg, id=648, 1339.0025pt x 883.3pt>
 File: ./immagini/Appendice/App_elencoQuesiti.jpeg Graphic file (type jpg)
 
 <use ./immagini/Appendice/App_elencoQuesiti.jpeg>
 Package pdftex.def Info: ./immagini/Appendice/App_elencoQuesiti.jpeg used on in
-put line 1007.
-(pdftex.def)             Requested size: 421.10086pt x 277.78271pt.
-
-<./immagini/Appendice/App_dettaglioQuesito.jpeg, id=653, 1339.0025pt x 767.8687
-4pt>
-File: ./immagini/Appendice/App_dettaglioQuesito.jpeg Graphic file (type jpg)
- <use ./immagini/Appendice/App_dettaglioQuesito.jpeg>
-Package pdftex.def Info: ./immagini/Appendice/App_dettaglioQuesito.jpeg used on
- input line 1014.
-(pdftex.def)             Requested size: 398.33858pt x 228.42914pt.
- [80pdfTeX warning (ext4): destination with the same identifier (name{figure.Al
+put line 1003.
+(pdftex.def)             Requested size: 398.33858pt x 262.76816pt.
+ [78pdfTeX warning (ext4): destination with the same identifier (name{figure.Al
 ph2.30}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1018 
-       pdfTeX warning (ext4): destination with the same identifier (name{figure
-.Alph2.31}) has been already used, duplicate ignored
+l.1007 
+        <./immagini/Appendice/App_homepage.jpeg>]
+<./immagini/Appendice/App_dettaglioQuesito.jpeg, id=654, 1339.0025pt x 767.8687
+4pt>
+File: ./immagini/Appendice/App_dettaglioQuesito.jpeg Graphic file (type jpg)
+ <use ./immagini/Appendice/App_dettaglioQuesito.jpeg>
+Package pdftex.def Info: ./immagini/Appendice/App_dettaglioQuesito.jpeg used on
+ input line 1010.
+(pdftex.def)             Requested size: 398.33858pt x 228.42914pt.
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1018 
-        <./immagini/Appendice/App_homepage.jpeg> <./immagini/Appendice/App_elen
-coQuesiti.jpeg>]
-<./immagini/Appendice/02_SitoIndicazioni.jpeg, id=658, 2063.71pt x 1646.15pt>
+<./immagini/Appendice/02_SitoIndicazioni.jpeg, id=655, 2063.71pt x 1646.15pt>
 File: ./immagini/Appendice/02_SitoIndicazioni.jpeg Graphic file (type jpg)
 
 <use ./immagini/Appendice/02_SitoIndicazioni.jpeg>
 Package pdftex.def Info: ./immagini/Appendice/02_SitoIndicazioni.jpeg used on i
-nput line 1022.
-(pdftex.def)             Requested size: 341.43306pt x 272.33145pt.
+nput line 1018.
+(pdftex.def)             Requested size: 386.95764pt x 308.65237pt.
+ [79pdfTeX warning (ext4): destination with the same identifier (name{figure.Al
+ph2.31}) has been already used, duplicate ignored
 
-<./immagini/Appendice/App_CT.jpeg, id=659, 1339.0025pt x 657.45625pt>
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1021 
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.Alph2.32}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1021 
+        <./immagini/Appendice/App_elencoQuesiti.jpeg> <./immagini/Appendice/App
+_dettaglioQuesito.jpeg>]
+<./immagini/Appendice/App_CT.jpeg, id=660, 1339.0025pt x 657.45625pt>
 File: ./immagini/Appendice/App_CT.jpeg Graphic file (type jpg)
 
 <use ./immagini/Appendice/App_CT.jpeg>
 Package pdftex.def Info: ./immagini/Appendice/App_CT.jpeg used on input line 10
-29.
-(pdftex.def)             Requested size: 426.79134pt x 209.55765pt.
- [81pdfTeX warning (ext4): destination with the same identifier (name{figure.Al
-ph2.32}) has been already used, duplicate ignored
+25.
+(pdftex.def)             Requested size: 386.95764pt x 189.99532pt.
+ [80pdfTeX warning (ext4): destination with the same identifier (name{figure.Al
+ph2.33}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1033 
-       pdfTeX warning (ext4): destination with the same identifier (name{figure
-.Alph2.33}) has been already used, duplicate ignored
+l.1033 \begin{thebibliography}{00}
+                                  pdfTeX warning (ext4): destination with the s
+ame identifier (name{figure.Alph2.34}) has been already used, duplicate ignored
+
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1033 
-        <./immagini/Appendice/App_dettaglioQuesito.jpeg> <./immagini/Appendice/
-02_SitoIndicazioni.jpeg>] [82pdfTeX warning (ext4): destination with the same i
-dentifier (name{figure.Alph2.34}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1037 \begin{thebibliography}{00}
-                                   <./immagini/Appendice/App_CT.jpeg>] [83
+l.1033 \begin{thebibliography}{00}
+                                   <./immagini/Appendice/02_SitoIndicazioni.jpe
+g> <./immagini/Appendice/App_CT.jpeg>] [81
 
 ]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 1095
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 1091
 .
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Underfull \hbox (badness 3128) in paragraph at lines 1093--1098
+Underfull \hbox (badness 3128) in paragraph at lines 1089--1094
 []\T1/cmr/m/n/12 International So-cie-ty for Tech-no-lo-gy in Edu-ca-tion & Com
 -pu-ter Scien-
  []
 
 
-Underfull \hbox (badness 2486) in paragraph at lines 1093--1098
+Underfull \hbox (badness 2486) in paragraph at lines 1089--1094
 \T1/cmr/m/n/12 for K-12 edu-ca-tion.'' []$\T1/cmtt/m/n/12 https : / / csta . ac
 m . org / Curriculum / sub / CurrFiles /
  []
 
-[84] [85]
-Underfull \hbox (badness 4024) in paragraph at lines 1192--1194
+[82] [83]
+Underfull \hbox (badness 4024) in paragraph at lines 1188--1190
 []\T1/cmr/m/n/12 The Royal So-cie-ty, ``Shut do-wn or re-start? The way for-war
 d for
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1195--1198
+Underfull \hbox (badness 10000) in paragraph at lines 1191--1194
 []\T1/cmr/m/n/12 Programma il fu-tu-ro, ``Per-ché l'in-for-ma-ti-ca nel-le scuo
 -le'', []$\T1/cmtt/m/n/12 https :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1195--1198
+Underfull \hbox (badness 10000) in paragraph at lines 1191--1194
 \T1/cmtt/m/n/12 / / www . programmailfuturo . it / progetto / perche-[]partecip
 are /
  []
 
 
-Underfull \hbox (badness 4254) in paragraph at lines 1199--1201
+Underfull \hbox (badness 4254) in paragraph at lines 1195--1197
 []\T1/cmr/m/n/12 Indicazioni na-zio-na-li ri-guar-dan-ti gli obiet-ti-vi spe-ci
 -fi-ci di ap-pren-di-men-
  []
 
 
-Underfull \hbox (badness 4366) in paragraph at lines 1199--1201
+Underfull \hbox (badness 4366) in paragraph at lines 1195--1197
 \T1/cmr/m/n/12 to con-cer-nen-ti le at-ti-vi-tà e gli in-se-gna-men-ti com-pre-
 si nei pia-ni de-
  []
 
 
-Underfull \hbox (badness 3354) in paragraph at lines 1199--1201
+Underfull \hbox (badness 3354) in paragraph at lines 1195--1197
 \T1/cmr/m/n/12 gli stu-di pre-vi-sti per i per-cor-si li-cea-li di cui al-l'art
 . 10, com-ma 3,
  []
 
 
-Underfull \hbox (badness 1661) in paragraph at lines 1199--1201
+Underfull \hbox (badness 1661) in paragraph at lines 1195--1197
 \T1/cmr/m/n/12 del DPR 15/3/2010, n. 89, in re-la-zio-ne al-l'art. 2, com-mi 1 
 e 3, del
  []
 
-[86]
-Underfull \hbox (badness 10000) in paragraph at lines 1202--1204
+[84]
+Underfull \hbox (badness 10000) in paragraph at lines 1198--1200
 \T1/cmtt/m/n/12 / / www . indire . it / lucabas / lkmw _ file / nuovi _ tecnici
  / / / INDIC / _LINEE _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1202--1204
+Underfull \hbox (badness 10000) in paragraph at lines 1198--1200
 \T1/cmtt/m/n/12 GUIDA _ TECNICI _ .pdf$[]\T1/cmr/m/n/12 , []$\T1/cmtt/m/n/12 ht
 tp : / / www . indire . it / lucabas / lkmw _ file / nuovi _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1202--1204
+Underfull \hbox (badness 10000) in paragraph at lines 1198--1200
 \T1/cmtt/m/n/12 professionali / / / linee _ guida / _LINEEGUIDAISTITUTIPROFESSI
 ONALI _ .pdf$[]\T1/cmr/m/n/12 ,
  []
 
-[87]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1255.
- [88]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1255.
+[85]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1251.
+ [86]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1251.
  (./Tesi Calcagni Annalisa.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1255.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1255.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1251.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1251.
 
 Package rerunfilecheck Info: File `"Tesi Calcagni Annalisa".out' has not change
 d.
-(rerunfilecheck)             Checksum: A0FE93DCF2FB13B17765F31428916363;1443.
+(rerunfilecheck)             Checksum: CBAD32C161EED7344F045B7FB7129C50;1395.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1255.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1251.
  ) 
 Here is how much of TeX's memory you used:
- 8775 strings out of 493013
- 126529 string characters out of 6133343
- 228566 words of memory out of 5000000
- 11926 multiletter control sequences out of 15000+600000
+ 8772 strings out of 493013
+ 126503 string characters out of 6133343
+ 229573 words of memory out of 5000000
+ 11925 multiletter control sequences out of 15000+600000
  17638 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,6n,28p,1224b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1491,10 +1488,10 @@ ve/2016/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb></usr/local/texlive
 /2016/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2
 016/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on "Tesi Calcagni Annalisa.pdf" (90 pages, 7382588 bytes).
+Output written on "Tesi Calcagni Annalisa.pdf" (88 pages, 7382181 bytes).
 PDF statistics:
- 817 PDF objects out of 1000 (max. 8388607)
+ 815 PDF objects out of 1000 (max. 8388607)
  668 compressed objects within 7 object streams
- 207 named destinations out of 1000 (max. 500000)
- 328 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 205 named destinations out of 1000 (max. 500000)
+ 320 words of extra memory for PDF output out of 10000 (max. 10000000)
 
