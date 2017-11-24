@@ -28,18 +28,16 @@ def index():
 
 @app.route("/elencoquesiti", methods=['GET'])
 def elencoquesiti():
-    #result = request.args
     type = request.args.get("type")
     id = request.args.get("id")
-    
-    if type=="indicazioni":
-        quesiti = handle.tasks.find({'indicazioni_nazionali':{'$in':[id]}})
-    
+
     if type=="ct":
         quesiti = handle.tasks.find({'computational_thinking':{'$in':[id]}})
-    
     else:
-        quesiti = handle.tasks.find()
+        if type=="indicazioni":
+            quesiti = handle.tasks.find({'indicazioni_nazionali':{'$in':[id]}})
+        else:
+            quesiti = handle.tasks.find()
     return render_template('elencoquesiti.html', quesiti=quesiti)
 
 @app.route("/dettaglioquesito")
@@ -56,8 +54,23 @@ def argomento_informatico():
 
 @app.route("/traguardieobiettivi")
 def traguardieobiettivi():
-    indicazioninaz = handle.indicazioninazionali.find()
-    return render_template('traguardieobiettivi.html', task=findTask(), indicazioni=True, indicazioninaz=indicazioninaz)
+    result = request.args["id_quesito"]
+    ind_task = handle.tasks.find_one({'id':result},{'_id':0,'indicazioni_nazionali':1})
+    lista_id = ind_task.items()[0][1]
+    indicazioninaz = handle.indicazioninazionali.find({'id_indicazioni':{'$in':lista_id}})
+    j=0
+    x=[]
+    y=[]
+    for i in indicazioninaz:
+        #print i
+        if i.items()[0][1]== "Matematica":
+            y.append(i)
+            print "ciao"
+            print y
+        x.append(i.items()[3][1])
+    #print x
+    return render_template('traguardieobiettivi.html', task=findTask(), x=x, y=y, indicazioninaz=indicazioninaz, indicazioni=True)
+
 
 @app.route("/generaPdf", methods=['GET', 'POST'])
 def generaPdf():

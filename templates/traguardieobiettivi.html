@@ -2,29 +2,34 @@
 {% extends "task.html" %}
 {% block task %}
 
-<div id="argomento_informatico" style="border-style: groove; padding-top: 2%; padding-right: 4%; padding-left: 2%; padding-bottom: 2%">
-	<ul>
-		{% for ind in indicazioninaz %}
-	    	{% for n in task.indicazioni_nazionali %}
-    			{% if n==ind.id_indicazioni %}
-    				<li>
-    					{{ind.area_disciplinare}}<br>
-    					{{ind.grado_scolastico}}<br>
-    					{% if ind.classi_scolastiche %}
-    						{{ind.classi_scolastiche}}<br>
-    					{% endif %}
-    					{% if ind.argomento_obiettivo %}
-    						{{ind.argomento_obiettivo}}<br>
-    					{% endif %}
-    					{{ind.traguardo}}{{ind.obiettivo}}
-    				</li>
-    			{% endif %}
-    		{% endfor %}
-    	{% endfor %}
-	</ul>
-</div> <!-- end argomento_informatico -->	
+x:{{x}}
+<br>y: {{y}}
+
+{% set elenco = task.indicazioni_nazionali %}
+
+{% for i in indicazioninaz%}
+{% if i.id_indicazioni in elenco and i.area_disciplinare=='Matematica' and i.grado_scolastico=='Scuola primaria'%}
+    <br>MATEMATICA, ELEMENTARI
+        <li>{{i}}</li>
+{% endif %}
+{% endfor %}
+<br>
+<br>
+<br>INIZIO PROVE VARIE:
+
+
+<br>TASK <br>
+{% for y in task.indicazioni_nazionali %}
+    {{y}}
+{% endfor %}
+
+
+<br>INDICAZIONI<br>
+{% for x in indicazioninaz %}
+    <br>IND: {{x}}
+{% endfor %}
+
+
 
 <!-- END ARGOMENTOINFORMATICO.HTML -->
 {% endblock %}
-
-

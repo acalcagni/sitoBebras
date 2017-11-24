@@ -1,7 +1,6 @@
 <!-- TASK.HTML -->
 {% extends "template.html" %}
 {% block body %}  
-<div class="container" id="content" >
 
   <div class="row">
 	 <div class="col-3">
@@ -25,7 +24,7 @@
   		</div><!-- end list-group -->
     </div><!-- end col-3 -->
 
-  	<div class="col-9" id="testo">
+  	<div class="col-8" id="testo">
     <h2 style="text-align:left; color: rgb(2,116,215)"><b>{{task.titolo}}</b></h2>
       <h5 style="text-align: left; color: rgb(2,116,215); padding-bottom: 1%">Categoria:
         {% for n in task.categoria %}
@@ -35,7 +34,8 @@
 		  
       {% block task %}{% endblock %}
     </div><!-- end col-9 -->
-
+    <div class="col-1">
+    </div>
   </div><!-- end row -->
 
 <!-- Modal -->
@@ -87,7 +87,6 @@
         </div> <!-- end modal-content -->
     </div> <!-- end modal-dialog -->
   </div> <!-- end modal fade -->
- </div>  <!-- end container -->
 <!-- END TASK.HTML -->
 {% endblock %}
 
